@@ -44,7 +44,7 @@
     width: 30rem;
     height: 30rem;
     background-color: #feffff;
-    background-image: url('images/wall-4-light.png');
+    background-image: url('/images/wall-4-light.png');
     border-radius: 50%;
     z-index: -1;
     background-blend-mode: multiply;
