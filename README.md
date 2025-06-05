@@ -1,12 +1,85 @@
-# React + Vite
+Dannon Abayomi - Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the source code for my personal developer portfolio a modern, interactive, and performance-focused web experience built to showcase my skills, experience, and projects as a Frontend Developer.
 
-Currently, two official plugins are available:
+🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+> [Visit Portfolio](https://your-portfolio-link.com) 
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+📁 Project Structure
+
+portfolio/
+├── public/
+├── src/
+│ ├── components/
+│ │ ├── Footer.jsx / Footer.css
+│ │ ├── Hero.jsx / Hero.css
+│ │ ├── HomeTransition.jsx / HomeTransition.css
+│ │ ├── HoverPreview.jsx / HoverPreview.css
+│ │ ├── LoadingScreen.jsx / LoadingScreen.css
+│ │ ├── Navbar.jsx / Navbar.css
+│ │ ├── ProjectCard.jsx / ProjectCard.css
+│ │ ├── TransitionOverlay.jsx / transitionOverlay.css
+│ ├── data/
+│ │ └── projects.js
+│ ├── pages/
+│ │ ├── Home.jsx
+│ │ ├── ProjectProfile.jsx / projectProfile.css
+│ ├── sections/
+│ │ ├── About.jsx / about.css
+│ │ ├── Contact.jsx / contact.css
+│ │ ├── Skills.jsx / skill.css
+│ │ ├── Projects.jsx / projects.css
+│ ├── App.jsx
+│ ├── main.jsx
+│ └── index.css
+├── README.md
+├── index.html
+├── package.json
+├── vite.config.js
+└── .gitignore
+
+
+
+🛠️ Built With
+
+React.js – Frontend framework
+  React Router – Navigation
+  GSAP – Page and text animations
+  CSS Modules – Component-specific styling
+  Vite – Fast development build tool
+
+
+✨ Features
+
+- Smooth animated transitions between pages (GSAP-powered)
+- Interactive hover effects with sound and preview overlays
+- Page preloader and navigation overlay
+- Scroll-to-section from navbar
+- Responsive and mobile-friendly design
+- Resume download button with animated icon transitions
+
+
+🧩 Getting Started
+
+Prerequisites
+
+Make sure you have these installed:
+
+[Node.js](https://nodejs.org/)
+[Vite](https://vitejs.dev/) (installed via `npm i`)
+
+Installation
+
+```bash
+# Clone this repo
+git clone https://github.com/your-username/portfolio.git
+cd portfolio
+
+# Install dependencies
+npm install
+
+# Run locally
+npm run dev
