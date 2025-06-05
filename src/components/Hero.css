@@ -4,7 +4,7 @@
 
 .hero-container {
     padding: 0 2rem;
-    height: 90vh;
+    height: 95vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -99,6 +99,7 @@
         opacity: 0;
         transform: translateY(3rem);
         animation: fadeSlideUp 1s ease-out 1s forwards;
+        font-weight: 900;
     }
 
     .developer {
@@ -134,8 +135,13 @@
         padding: 0 5rem;
     }
 
+    .front {
+        padding-left: 4.5rem;
+    }
+
     .desktop-hero {
         font-size: 22rem;
+        font-weight: 900;
     }
 
     .developer {
