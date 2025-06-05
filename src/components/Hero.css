@@ -135,10 +135,6 @@
         padding: 0 5rem;
     }
 
-    .front {
-        padding-left: 4.5rem;
-    }
-
     .desktop-hero {
         font-size: 22rem;
         font-weight: 900;
@@ -149,4 +145,10 @@
         margin-left: -1rem;
     }
 
+}
+
+@media(min-width: 1440px) {
+    .front {
+        padding-left: 4.5rem;
+    }
 }
