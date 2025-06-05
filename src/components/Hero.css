@@ -4,7 +4,7 @@
 
 .hero-container {
     padding: 0 2rem;
-    height: 95vh;
+    height: 92dvh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -93,7 +93,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        font-size: 17.5rem;
+        font-size: 17rem;
         font-weight: 100;
         overflow: hidden;
         opacity: 0;
@@ -107,7 +107,7 @@
     }
 
     .front {
-        padding-left: 3rem;
+        padding-left: 4rem;
     }
 
     @keyframes fadeSlideUp {
