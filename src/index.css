@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: 'Satoshi';
+    src: url('/fonts/Satoshi-Regular.woff2') format('woff2'),
+        url('/fonts/Satoshi-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.fav {
+    border-radius: 50%;
+}
+
+body {
+    scroll-behavior: smooth;
+    font-size: 1.2rem;
+    background-color: #121111;
+    background-image: url('images/concrete-wall.png');
+    color: rgba(255, 255, 255, 0.88);
+    font-family: 'Anton';
+}
+
+a,
+button,
+.btn,
+.project-profile-link {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+}
+
+a:focus,
+button:focus,
+.nav-link-desktop:focus,
+.project-profile-link:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+:focus:not(:focus-visible) {
+    outline: none;
+}
+
+.black-layer {
+    font-size: 10rem;
+}
+
+p,
+li {
+    color: #aaa;
+}
+
+.app-container {
+    padding: 2rem 0;
+}
+
+a {
+    text-decoration: none;
+    color: #feffff;
+}
+
+.img-mob {
+    display: none;
+}
+
+
+@media(min-width: 480px) {
+
+    .hello-word {
+        font-size: 10rem;
+    }
+
+    .hero-container .hero-text {
+        margin-top: -10rem;
+        font-size: 10rem;
+        font-weight: 1800;
+    }
+
+    .about-section .my-picture {
+        width: 25rem;
+        height: 30rem;
+    }
+
+    .stack-lists {
+        display: grid;
+        column-gap: 7rem;
+    }
+}
+
+@media(min-width: 768px) {
+
+    body {
+        font-size: 1.75rem;
+    }
+}

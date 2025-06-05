@@ -1,0 +1,151 @@
+footer {
+    font-family: 'Satoshi', sans-serif;
+    font-size: 1.5rem;
+    margin-top: 15rem;
+    padding: 3rem 2rem;
+    border-top: .2px solid #474747;
+}
+
+.foot {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.dub {
+    display: none;
+}
+
+.foot-text {
+    font-family: 'Satoshi', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.75rem;
+}
+
+.foot-text h4 {
+    color: #aaa;
+    font-weight: 100;
+    font-size: 1.9rem;
+}
+
+.live-update p {
+    color: #feffff;
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.socials h4 {
+    color: #aaa;
+}
+
+.social-link {
+    display: flex;
+    gap: 2rem;
+    font-size: 1.75rem;
+}
+
+.socials h4 {
+    font-size: 1.9rem;
+    opacity: 0.75;
+    font-weight: 100;
+}
+
+
+@media(min-width: 768px) {
+    footer {
+        font-size: 1.75rem;
+    }
+
+    .foot {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .foot-text {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .foot-text h4 {
+        font-size: 2.1rem;
+    }
+
+    .socials h4 {
+        font-size: 2.1rem;
+    }
+
+    .socials {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .live-update p {
+        font-size: 1.9rem;
+    }
+
+    .social-link {
+        font-size: 1.9rem;
+    }
+}
+
+@media(min-width: 1024px) {
+
+    .foot-text h4,
+    .socials h4 {
+        font-size: 1.75rem;
+    }
+
+    .live-update p,
+    .social-link {
+        font-size: 1.5rem;
+    }
+
+    .dub {
+        display: block;
+    }
+
+    .social-links-wrapper {
+        height: 2.5rem;
+        overflow: hidden;
+        display: inline-block;
+    }
+
+    .social-links {
+        display: block;
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .slide {
+        display: flex;
+        flex-direction: column;
+        transition: transform 0.3s ease;
+    }
+
+    .text {
+        height: 2.5rem;
+        line-height: 2.5rem;
+        text-align: left;
+    }
+
+    .social-links-wrapper:hover .slide {
+        transform: translateY(-2.5rem);
+    }
+}
+
+@media(min-width: 1280px) {
+    footer {
+        padding: 3rem 5rem;
+    }
+}

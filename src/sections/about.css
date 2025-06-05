@@ -1,0 +1,168 @@
+.about-section {
+    position: relative;
+    margin-top: 10rem;
+    padding: 3rem 2rem;
+}
+
+.hello-text {
+    font-size: 7.2rem;
+    font-weight: 900;
+    overflow: hidden;
+    display: flex;
+    gap: .5rem;
+    width: 100%;
+    text-transform: uppercase;
+    padding: 3rem 0;
+    justify-content: center;
+}
+
+.hello-word {
+    display: inline-block;
+    will-change: transform, opacity;
+}
+
+.about-text {
+    margin-top: 6rem;
+    font-family: 'Satoshi', sans-serif;
+    font-size: 2rem;
+}
+
+.award-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    gap: 1.5rem;
+}
+
+.award-heading {
+    font-size: 2rem;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+.award-sub-heading {
+    color: #feffff;
+}
+
+.award-section p {
+    font-family: 'Satoshi', sans-serif;
+    font-size: 2rem;
+}
+
+.my-picture {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20rem;
+    height: 25rem;
+    border-radius: .3rem;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.special {
+    font-family: 'Satoshi', sans-serif;
+    font-size: 1.75rem;
+    padding-top: 5rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+@media(min-width: 768px) {
+    .hello-word {
+        font-size: 16.5rem;
+    }
+
+    .about-text {
+        font-size: 2.3rem;
+    }
+
+    .about-section .my-picture {
+        width: 30rem;
+        height: 40rem;
+    }
+
+    .award-heading {
+        font-size: 3rem;
+    }
+
+    .award-section p {
+        font-size: 2.3rem;
+    }
+
+    .special {
+        font-size: 2rem;
+    }
+}
+
+@media(min-width: 1024px) {
+
+    .about-section {
+        margin-top: 15rem;
+    }
+
+    .hello-word {
+        font-size: 23rem;
+        padding: 0;
+        font-weight: 100;
+    }
+
+    .about-section .my-picture {
+        width: 35rem;
+        height: 42rem;
+    }
+
+    .about-text {
+        margin-top: 0rem;
+    }
+
+    .about-text {
+        font-size: 1.5rem;
+    }
+
+    .award-section p {
+        font-size: 1.5rem;
+    }
+
+    .special p {
+        font-size: 1.5rem;
+    }
+}
+
+@media(min-width: 1280px) {
+
+    .hello-word {
+        font-size: 27.5rem;
+    }
+
+    .about-section {
+        padding: 3rem 5rem;
+    }
+
+    .about-section .my-picture {
+        margin-top: 10rem;
+        width: 35rem;
+        height: 40rem;
+    }
+
+    .about-text-span {
+        width: 40%;
+    }
+
+    .about-description {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .award-section {
+        width: 40%;
+        margin-top: 0;
+    }
+
+    .special {
+        padding: 0rem;
+    }
+}

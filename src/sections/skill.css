@@ -1,0 +1,160 @@
+.skills-container {
+    margin-top: 10rem;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+.skills-section {
+    position: relative;
+    padding: 4rem 2rem;
+    overflow: hidden;
+}
+
+.skill-stack-wrapper {
+    position: relative;
+}
+
+.skill-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 19rem;
+    font-weight: 800;
+    color: #aaa;
+    opacity: 0.07;
+    white-space: nowrap;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.skills-title {
+    text-transform: uppercase;
+    font-size: 4rem;
+    margin: 2rem 0;
+    text-align: center;
+    font-weight: 400;
+}
+
+.skill-stack h4 {
+    font-weight: 100;
+    font-size: 2rem;
+    margin: 2rem 0;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+.list-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 3rem 0;
+}
+
+.stack-lists {
+    font-family: 'Satoshi', sans-serif;
+    font-size: 1.75rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 4rem;
+    row-gap: 1rem;
+    padding: 0 2rem;
+}
+
+.skill-stack ul li {
+    text-align: left;
+}
+
+.special-stack {
+    margin: 3rem 0;
+}
+
+.special-stack ul li {
+    font-size: 1.5rem;
+    font-family: 'Satoshi', sans-serif;
+}
+
+
+@media(min-width: 768px) {
+    .skill-bg {
+        font-size: 30rem;
+    }
+
+    .skills-title {
+        font-size: 6rem;
+    }
+
+    .skill-stack h4 {
+        font-size: 2.5rem;
+    }
+
+    .stack-lists {
+        display: grid;
+        column-gap: 10rem;
+        row-gap: 2rem;
+        font-size: 2.2rem;
+    }
+
+    .special-stack ul li {
+        font-size: 2.2rem;
+    }
+}
+
+@media(min-width: 1024px) {
+    .skill-bg {
+        font-size: 42rem;
+    }
+
+    .skills-title {
+        font-size: 8rem;
+    }
+
+    .skill-stack h4 {
+        font-size: 3rem;
+    }
+
+    .skill-stack ul li {
+        font-size: 2rem;
+    }
+
+    .stack-lists {
+        display: grid;
+        column-gap: 25rem;
+    }
+
+    .special-stack h4 {
+        font-size: 3rem;
+    }
+
+    .special-stack ul li {
+        font-size: 2rem;
+    }
+}
+
+@media(min-width: 1280px) {
+    .skills-section {
+        padding: 3rem 5rem;
+    }
+
+    .skill-bg {
+        font-size: 45rem;
+    }
+
+    .skill-title {
+        font-size: 15rem;
+    }
+
+    .stack-lists {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        padding: 0;
+        column-gap: 5rem;
+        padding: 0 2rem;
+    }
+
+}

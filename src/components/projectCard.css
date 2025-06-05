@@ -1,0 +1,140 @@
+.project-card-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    border-bottom: .5px solid #474747;
+    padding: 5rem 2rem 3rem 2rem;
+}
+
+.title {
+    display: flex;
+    font-size: 3rem;
+    color: #feffff;
+    font-family: 'Anton';
+    text-transform: uppercase;
+    font-weight: 500;
+    gap: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 0;
+    background-color: #000;
+    transition: width 0.6s ease-out;
+}
+
+.title.visible::after {
+    width: 100%;
+}
+
+.short-description {
+    font-size: 1.5rem;
+    font-family: 'Satoshi', sans-serif;
+    color: #aaa;
+}
+
+.hover-preview {
+    display: none;
+}
+
+.live-link-list {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.5rem;
+    font-family: 'Satoshi';
+    border-radius: 4rem;
+    padding: 12px;
+}
+
+.live-link-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.live-link-content {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    text-decoration: none;
+    color: inherit;
+    font-weight: 100;
+}
+
+.live-link-icon {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.project-card-grid {
+    border-bottom: .5px solid #feffff;
+    padding: 3rem 2rem 1.5rem 2rem;
+}
+
+picture img {
+    padding: 2rem 0;
+}
+
+img {
+    width: 100%;
+    height: 600px;
+}
+
+.grid-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+@media(min-width: 768px) {
+    .title {
+        font-size: 5rem;
+    }
+
+    .short-description {
+        font-size: 2rem;
+    }
+}
+
+@media(min-width: 1024px) {
+    .project-card-list {
+        position: relative;
+    }
+
+    .dimmed {
+        opacity: 0.3;
+        transition: opacity 0.3 ease;
+    }
+}
+
+@media(min-width: 1280px) {
+    .project-card-list {
+        padding: 3rem 5rem 1.5rem 5rem;
+    }
+
+    .title {
+        font-size: 7rem;
+        text-transform: uppercase;
+    }
+
+    .title.slide-title {
+        font-weight: 700;
+        font-size: 7rem;
+        letter-spacing: 0;
+    }
+
+    .letter {
+        display: inline-block;
+        font-feature-settings: "kern";
+    }
+}

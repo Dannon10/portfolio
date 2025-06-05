@@ -1,0 +1,87 @@
+.projects-container {
+    margin-top: 10rem;
+}
+
+.btn-view {
+    border: none;
+    background-color: transparent;
+    color: #feffff;
+}
+
+.view-toggle {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: .1px solid #474747;
+    padding: 0 2rem 2rem 2rem;
+    padding-bottom: 3rem;
+}
+
+.view-toggle h2 {
+    font-size: 5rem;
+    font-weight: 400;
+    font-family: 'Anton';
+}
+
+.toggle-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.btn-view {
+    color: #aaa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: .65;
+}
+
+.active-view {
+    color: #feffff;
+    border: 2px solid #feffff;
+    border-radius: 50%;
+    padding: 6px;
+    opacity: 1;
+}
+
+@media(min-width: 768px) {
+    .view-toggle h2 {
+        font-size: 6.5rem;
+    }
+
+    .btn-view .view {
+        width: 4rem;
+        height: 4rem;
+    }
+}
+
+@media(min-width: 1024px) {
+
+    .projects-container {
+        overflow: hidden;
+    }
+
+    .view-toggle h2 {
+        font-size: 5rem;
+    }
+
+    .btn-view .view {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .live-site-external-link {
+        display: none;
+    }
+}
+
+@media(min-width: 1280px) {
+    .view-toggle {
+        padding: 2rem 5rem;
+    }
+
+    .view-toggle h2 {
+        font-size: 5rem;
+    }
+}

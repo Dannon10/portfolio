@@ -1,0 +1,160 @@
+.contact-container {
+    margin: 10rem 0 3rem 0;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact-heading-text h1 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 5rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+}
+
+.name-field,
+.email-field {
+    width: 100%;
+    height: 4rem;
+    padding: 2rem 0 2rem 0;
+    font-size: 1.75rem;
+    font-family: 'Satoshi', sans-serif;
+    border: none;
+    border-bottom: .1px solid #feffff;
+    background-color: transparent;
+    color: #feffff;
+}
+
+.name-field:focus,
+.email-field:focus {
+    outline: none;
+}
+
+textarea {
+    color: #feffff;
+    width: 100%;
+    height: 25rem;
+    font-size: 1.75rem;
+    font-family: 'Satoshi', sans-serif;
+    resize: none;
+    overflow: hidden;
+    padding: 2rem 0 2rem 0;
+    resize: vertical;
+    background-color: rgb(17, 17, 17);
+    border: none;
+    border-bottom: 0.1px solid #feffff;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+.btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.btn-send {
+    border: none;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    width: 12rem;
+    height: 5rem;
+    font-size: 1.75rem;
+}
+
+.success-msg {
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+
+@media(min-width: 768px) {
+    .contact-heading-text h1 {
+        font-size: 6rem;
+    }
+
+    .name-field,
+    .email-field {
+        font-size: 1.75rem;
+    }
+
+    textarea {
+        font-size: 1.75rem;
+    }
+
+    .btn-send {
+        font-size: 2rem;
+        width: 15rem;
+        height: 7rem;
+    }
+
+    .success-msg {
+        font-size: 2.2rem;
+    }
+}
+
+@media(min-width: 1024px) {
+    .contact-heading-text h1 {
+        font-size: 8rem;
+    }
+
+    input:hover::placeholder {
+        transform: translate(6px);
+        transition: all .5s ease;
+    }
+
+    textarea:hover::placeholder {
+        transform: translate(6px);
+        transition: all .5s ease;
+    }
+
+    .name-field,
+    .email-field {
+        height: 4rem;
+    }
+
+    .msg-field {
+        height: 20rem;
+    }
+
+    .btn-container {
+        margin-top: .5rem;
+    }
+
+    .btn-send {
+        padding: 0;
+        height: 5rem;
+        width: 10rem;
+        font-size: 1.75rem;
+    }
+}
+
+@media(min-width: 1280px) {
+    .contact-container {
+        padding: 0 5rem;
+    }
+
+    .contact-heading-text h1 {
+        font-size: 15rem;
+    }
+
+    .btn-send {
+        transition: all .4s easi;
+    }
+
+    .btn-send:hover {
+        background-color: #121111;
+        color: #feffff;
+        border: 1px solid #aaa;
+    }
+}

@@ -1,0 +1,146 @@
+.desktop-hero {
+    display: none;
+}
+
+.hero-container {
+    padding: 0 2rem;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    gap: 1.3rem;
+    font-weight: bolder;
+    position: relative;
+}
+
+.hero-text {
+    font-weight: 900;
+    opacity: 0;
+    font-family: 'Anton';
+    font-size: 7.8rem;
+    transform: translateY(2rem);
+    animation: fadeSlideUp .3s ease-out .15s forwards;
+}
+
+@keyframes fadeSlideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.circle-container {
+    width: 100vw;
+    height: 30vh;
+    overflow-x: hidden;
+    pointer-events: none;
+}
+
+.hero-circle {
+    position: absolute;
+    bottom: -12rem;
+    right: -13rem;
+    width: 30rem;
+    height: 30rem;
+    background-color: #feffff;
+    background-image: url('images/wall-4-light.png');
+    border-radius: 50%;
+    z-index: -1;
+    background-blend-mode: multiply;
+    background-size: cover;
+    opacity: 0;
+    transform: scale(0.8);
+    will-change: transform, opacity;
+}
+
+@keyframes fadeSlideIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.8) translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+
+
+@media(min-width: 768px) {
+    .hero-container {
+        height: 95vh;
+    }
+
+    .hero-text {
+        font-size: 12.5rem;
+    }
+
+
+}
+
+@media(min-width: 1024px) {
+    .hero-container {
+        gap: 0rem;
+    }
+
+    .hero-text {
+        display: none;
+    }
+
+    .desktop-hero {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 17.5rem;
+        font-weight: 100;
+        overflow: hidden;
+        opacity: 0;
+        transform: translateY(3rem);
+        animation: fadeSlideUp 1s ease-out 1s forwards;
+    }
+
+    .developer {
+        margin-top: -6rem;
+    }
+
+    .front {
+        padding-left: 3rem;
+    }
+
+    @keyframes fadeSlideUp {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .slide-hero-text,
+    .hyphen {
+        display: inline-block;
+        transition: transform 0.3s ease;
+        white-space: nowrap;
+        text-align: justify;
+    }
+
+    .end {
+        padding-right: 20rem;
+    }
+}
+
+@media(min-width: 1280px) {
+    .hero-container {
+        padding: 0 5rem;
+    }
+
+    .desktop-hero {
+        font-size: 22rem;
+    }
+
+    .developer {
+        margin-top: -10rem;
+        margin-left: -1rem;
+    }
+
+}
