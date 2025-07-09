@@ -85,7 +85,7 @@ export default function Navbar() {
 
                 <div className="nav-items">
                     <div className="resume">
-                        <a href="/Resume-Dannon-Abayomi.pdf" download>
+                        <a href="/Resume.pdf" download>
                             <button className="btn btn-download">
                                 <span className="slide-wrapper">
                                     <span className="slide-text top">RESUME</span>

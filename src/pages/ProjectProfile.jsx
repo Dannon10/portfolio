@@ -8,7 +8,7 @@ import Footer from '../components/Footer';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import TransitionOverlay from '../components/TransitionOverlay';
-import './projectprofile.css';
+import './projectProfile.css';
 
 gsap.registerPlugin(ScrollTrigger);
 

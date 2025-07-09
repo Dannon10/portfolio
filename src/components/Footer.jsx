@@ -28,7 +28,7 @@ export default function Footer() {
       label: 'Whatsapp',
       href: 'https://wa.me/2348106624869?text=Hello%20Dannon%2C%20I%20saw%20your%20portfolio%20and%20wanted%20to%20reach%20out!'
     },
-    { label: 'Twitter', href: 'https://twitter.com/Dannon10' },
+    { label: 'Twitter', href: 'https://twitter.com/Dannon010' },
   ];
 
   return (

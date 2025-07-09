@@ -34,8 +34,8 @@ export default function Skills() {
                         <div className="list-container">
                             <ul className='stack-lists'>
                                 {[
-                                    'HTML', 'CSS', 'JavaScript', 
-                                    'Typescript', 'React.js','Redux', 'Vue.js', 'Nodejs',
+                                    'HTML', 'Tailwind CSS', 'JavaScript', 'React.js', 'Next.js', 
+                                    'Typescript', 'Redux', 'Vue.js',
                                     'GSAP', 'Firebase', 'Git/Github', 'Agile/Scrum'
                                 ].map((item, index) => (
                                     <li
