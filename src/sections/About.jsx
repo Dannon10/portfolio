@@ -104,7 +104,7 @@ export default function About() {
                         Outside the screen, you'll find me listening to good music,
                         getting heartbroken by Man United, or binge-watching movies
                         like it's a full-time job.
-                        I'm currently open to junior front-end developer roles and
+                        I'm currently open to front-end developer roles and
                         always happy to collaborate on exciting web projects let's build something awesome together!
                     </p>
                 </div>
