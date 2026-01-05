@@ -8,6 +8,7 @@ import About from '../sections/About';
 import Skills from '../sections/Skills';
 import Contact from '../sections/Contact';
 import Footer from '../components/Footer';
+import Experience from '../sections/Experience';
 
 export default function Home() {
   const [transitioning, setTransitioning] = useState(false);
@@ -49,6 +50,7 @@ export default function Home() {
           overlayRef={overlayRef}
         />
       </div>
+      <Experience />
       <div ref={aboutRef}>
         <About />
       </div>

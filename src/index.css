@@ -30,7 +30,12 @@ body {
     background-color: #121111;
     background-image: url('images/concrete-wall.png');
     color: rgba(255, 255, 255, 0.88);
-    font-family: 'Anton';
+    font-family: 'Anton'; 
+}
+
+body::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
 }
 
 a,

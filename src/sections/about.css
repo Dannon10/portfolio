@@ -116,18 +116,15 @@
 
     .about-text {
         margin-top: 0rem;
-    }
-
-    .about-text {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     .award-section p {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     .special p {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 }
 
