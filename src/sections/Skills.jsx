@@ -28,15 +28,21 @@ export default function Skills() {
                 <h2 className='skills-title'>Used by my hands and mind</h2>
 
                 <div className="skill-stack-wrapper">
-                    <div className="skill-bg">SKILLS</div> 
+                    <div className="skill-bg">SKILLS</div>
                     <div className="skill-stack">
-                        <h4>Languages/Frameworks/Libraries</h4>
+                        <h4>Tech Stack</h4>
                         <div className="list-container">
                             <ul className='stack-lists'>
                                 {[
-                                    'HTML', 'Tailwind CSS', 'JavaScript', 'React.js', 'Next.js', 
-                                    'Typescript', 'Redux', 'Vue.js',
-                                    'GSAP', 'Firebase', 'Git/Github', 'Agile/Scrum'
+                                    'HTML', 'JavaScript', 'TypeScript',
+                                    'React.js', 'Next.js', 'Vue.js',
+                                    'Tailwind CSS', 'Redux', 'GSAP', 'Framer Motion',
+                                    'UI/UX Implementation',
+                                    'API Integration (REST)', 'Authentication Flows',
+                                    'WebSockets',
+                                    'Web3 Integration', 'Smart Contract Interaction', 'Escrow Payment Systems',
+                                    'Cloudinary', 'Firebase',
+                                    'Git/GitHub', 'Agile/Scrum'
                                 ].map((item, index) => (
                                     <li
                                         key={item}

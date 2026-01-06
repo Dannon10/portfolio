@@ -20,18 +20,11 @@ export default function Experience() {
                             Built and shipped production-ready frontend features for a
                             Figma-like web application for fashion designers and makers.
                         </li>
-                        {/* <li>
-                            Developed multi-step onboarding flows and responsive UI/UX for
-                            desktop and mobile
-                            applications.
-                        </li> */}
                         <li>
                             Architected and integrated a WebSocket-driven real-time chat system within an escrow workflow.
                         </li>
                     </ul>
                 </div>
-
-                {/* Prep Beta Solutions */}
                 <div className="experience-item">
                     <div className="experience-header">
                         <h3>Frontend Developer</h3>

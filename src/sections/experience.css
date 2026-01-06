@@ -1,11 +1,11 @@
 
 .experience-section {
-    margin-top: 10rem;
+    margin-top: 6rem;
     padding: 3rem 4rem 0 4rem;
 }
 
 .section-title {
-    font-size: 2rem;
+    font-size: 5rem;
     font-weight: 600;
     margin-bottom: 1.75rem;
 }
@@ -63,7 +63,7 @@
 
 .experience-note {
     margin-top: 1.75rem;
-    font-size: 2.5rem;
+    font-size: 1.75rem;
     font-family: 'Satoshi', sans-serif;
 }
 
