@@ -44,6 +44,23 @@ export default function Experience() {
                         </li>
                     </ul>
                 </div>
+                <div className="experience-item">
+                    <div className="experience-header">
+                        <h3>Frontend Developer</h3>
+                        <span className="experience-company">Tiffany Berth School</span>
+                    </div>
+
+                    <p className="experience-duration">September 2023 – December 2023</p>
+
+                    <ul className="experience-details">
+                        <li>
+                            Designed and maintained responsive user interfaces for the school's website and internal academic platforms
+                        </li>
+                        <li>
+                            Developed 8+ pages for admissions, announcements, academic calendars, and student resources using React.js, reducing load time by 40%.
+                        </li>
+                    </ul>
+                </div>
             </div>
 
             <p className="experience-note">

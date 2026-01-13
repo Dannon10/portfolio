@@ -8,8 +8,7 @@ export const projects = [
         shortDescription: 'Figma for Fashion',
         description: 'Astra is an innovative platform designed to empower creators and makers by seamlessly connecting them with clients while providing secure and reliable payment solutions. The platform guides users through a comprehensive onboarding process, allowing makers to create detailed profiles, showcase their skills, and manage their portfolios, while facilitating real-time collaboration with clients through an integrated chat system. It features a blockchain-powered escrow payment mechanism and smart contract integration, ensuring transparent and trustless transactions. I contributed to Astra by developing the frontend interface, implementing multi-step onboarding flows, integrating the smart contract-based escrow system, and managing API communication and state, all while ensuring a responsive and intuitive user experience across desktop and mobile devices.',
         liveLink: 'https://www.astra.fashion',
-        repoLink: 'https://github.com/Astralabs2050/brand-frontend-hackerthon'
-    },
+        },
     {
         id: 1,
         title: 'Task Manager',
@@ -32,17 +31,6 @@ export const projects = [
         liveLink: 'https://vendox-rho.vercel.app',
         repoLink: 'https://github.com/Dannon10/vendox'
     },
-    // {
-    //     id: 3,
-    //     title: 'Astra',
-    //     imageMobile: '/images/astra-mobile.jpg',
-    //     imageDesktop: '/images/astra-desktop.png',
-    //     tech: ['Next.js', 'TypeScript', 'React', 'CSS Modules', 'GSAP'],
-    //     shortDescription: 'Job Listing Platform',
-    //     description: 'This is a fully responsive job listing web application built using Next.js, React, TypeScript, and CSS Modules, with a focus on clean user interface, performance, and usability. The app allows users to browse a list of job openings, filter them by job type, and search by job title or company name. Each job can be clicked to view full details on a separate page. The filtering and search features are synced with the URL, enabling users to share or revisit specific searches easily. A dark and light mode toggle is implemented and persisted using localStorage for better accessibility. The project also features smooth page transitions and loading animations using GSAP and React Spinners. Job data is fetched from a local JSON file and simulated with a delay to mimic real API behavior. The overall structure is organized with scalability in mind, using reusable components and strict type safety provided by TypeScript.',
-    //     liveLink: 'https://astra-jobs-2i1m.vercel.app/',
-    //     repoLink: 'https://github.com/Dannon10/astra-jobs'
-    // },
     {
         id: 4,
         title: 'Weather App',

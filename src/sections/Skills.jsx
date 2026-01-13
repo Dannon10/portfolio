@@ -36,11 +36,11 @@ export default function Skills() {
                                 {[
                                     'HTML', 'JavaScript', 'TypeScript',
                                     'React.js', 'Next.js', 'Vue.js',
-                                    'Tailwind CSS', 'Redux', 'GSAP', 'Framer Motion',
+                                    'Tailwind CSS', 'Redux', 'Zustand', 'GSAP', 'Framer Motion',
                                     'UI/UX Implementation',
                                     'API Integration (REST)', 'Authentication Flows',
                                     'WebSockets',
-                                    'Web3 Integration', 'Smart Contract Interaction', 'Escrow Payment Systems',
+                                    'Web3 Integration', 'Smart Contract Interaction', 'Postman',
                                     'Cloudinary', 'Firebase',
                                     'Git/GitHub', 'Agile/Scrum'
                                 ].map((item, index) => (

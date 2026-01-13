@@ -119,23 +119,25 @@ export default function ProjectProfile() {
                 </span>
               </a>
 
-              <a
-                href={repoLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="project-link hover-slide"
-              >
-                <span className={isMobile ? "project-profile-live-link" : "slides-wrapper"}>
-                  <span className={isMobile ? "live-link-text" : "slide-item"}>
-                    <FaGithub className="github-link-icon" /> Repo
+              {repoLink && (
+                <a
+                  href={repoLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="project-link hover-slide"
+                >
+                  <span className={isMobile ? "project-profile-live-link" : "slides-wrapper"}>
+                    <span className={isMobile ? "live-link-text" : "slide-item"}>
+                      <FaGithub className="github-link-icon" /> Repo
+                    </span>
+                    { isMobile ? '' : 
+                      <span className={isMobile ? "live-link-text" : "slide-item item2"}>
+                      <FaGithub className="github-link-icon" /> Repo
+                    </span>
+                    }
                   </span>
-                  { isMobile ? '' : 
-                    <span className={isMobile ? "live-link-text" : "slide-item item2"}>
-                    <FaGithub className="github-link-icon" /> Repo
-                  </span>
-                  }
-                </span>
-              </a>
+                </a>
+              )}
             </div>
 
             <div className="project-strip" ref={stripRef}>
