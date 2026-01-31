@@ -36,8 +36,7 @@ export default function Skills() {
                                 {[
                                     'HTML', 'JavaScript', 'TypeScript',
                                     'React.js', 'Next.js', 'Vue.js',
-                                    'Tailwind CSS', 'Redux', 'Zustand', 'GSAP', 'Framer Motion',
-                                    'UI/UX Implementation',
+                                    'Tailwind CSS', 'SASS / SCSS', 'Redux', 'Zustand', 'Jest', 'Unit Testing', 'GSAP', 'Framer Motion',
                                     'API Integration (REST)', 'Authentication Flows',
                                     'WebSockets',
                                     'Web3 Integration', 'Smart Contract Interaction', 'Postman',
