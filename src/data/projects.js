@@ -1,16 +1,16 @@
 export const projects = [
     {
-        id: 7,
+        id: 1,
         title: 'Astra',
         imageMobile: '/images/astra-mobile.png',
         imageDesktop: '/images/astra-desktop2.png',
-        tech: ['Next.js', 'TypeScript', 'Tailwind CSS', 'WebSocket', 'Framer Motion', 'React Query', 'Thirdweb', 'Zustand'],
+        tech: ['Next.js', 'TypeScript', 'Tailwind CSS', 'WebSocket', 'Framer Motion', 'React Query', 'Thirdweb', 'Zustand', 'Jest', 'Unit Testing'],
         shortDescription: 'Figma for Fashion',
         description: 'Astra is an innovative platform designed to empower creators and makers by seamlessly connecting them with clients while providing secure and reliable payment solutions. The platform guides users through a comprehensive onboarding process, allowing makers to create detailed profiles, showcase their skills, and manage their portfolios, while facilitating real-time collaboration with clients through an integrated chat system. It features a blockchain-powered escrow payment mechanism and smart contract integration, ensuring transparent and trustless transactions. I contributed to Astra by developing the frontend interface, implementing multi-step onboarding flows, integrating the smart contract-based escrow system, and managing API communication and state, all while ensuring a responsive and intuitive user experience across desktop and mobile devices.',
         liveLink: 'https://www.astra.fashion',
         },
     {
-        id: 1,
+        id: 2,
         title: 'Task Manager',
         imageMobile: '/images/todo-mobile.jpg',
         imageDesktop: '/images/todo-desktop.png',
@@ -21,7 +21,18 @@ export const projects = [
         repoLink: 'https://github.com/Dannon10/task-manager'
     },
     {
-        id: 2,
+        id: 3,
+        title: 'LendR',
+        imageMobile: '/images/lendr-mobile.jpeg',
+        imageDesktop: '/images/lendr-desktop.png',
+        tech: [' React', 'Next.js', 'Typescript', 'Tanstack', 'SAAS/SCSS', 'Jest', 'Unit Testing'],
+        shortDescription: 'Admin Dashboard',
+        description: 'LendR is a modern user management dashboard built to simulate a real-world fintech admin system. The application fetches and displays user data from a mock API, enabling structured viewing, pagination, and detailed user records through a clean and responsive dashboard interface. The mock backend was created using a JSON data generator and deployed on Render, allowing the frontend to consume realistic API endpoints similar to a production environment. The dashboard supports paginated user lists and individual user detail views, mirroring how enterprise admin tools handle large datasets. The frontend was built with Next.js and React, written entirely in TypeScript for type safety and maintainability. Styling was handled using SCSS, ensuring a scalable and well-structured design system. The project also includes unit and integration tests written with Jest, improving reliability and validating core functionality such as data fetching and UI rendering. LendR demonstrates strong understanding of frontend architecture, API integration, testing, and dashboard-style application design commonly used in fintech and enterprise platforms.',
+        liveLink: 'https://dannon-abayomi-lendsqr-fe-test.vercel.app/',
+        repoLink: 'https://github.com/Dannon10/lendR'
+    },
+    {
+        id: 4,
         title: 'Vendox',
         imageMobile: '/images/vendox-mobile.png',
         imageDesktop: '/images/vendox-desktop.png',
@@ -32,7 +43,7 @@ export const projects = [
         repoLink: 'https://github.com/Dannon10/vendox'
     },
     {
-        id: 4,
+        id: 5,
         title: 'Weather App',
         imageMobile: '/images/weather-mobile.png',
         imageDesktop: '/images/weather-desktop.png',
@@ -43,7 +54,7 @@ export const projects = [
         repoLink: 'https://github.com/Dannon10/React-Weather-app'
     },
     {
-        id: 5,
+        id: 6,
         title: 'Pagix',
         imageMobile: '/images/pagix-mobile.jpg',
         imageDesktop: '/images/pagix-desktop.png',
@@ -53,16 +64,4 @@ export const projects = [
         liveLink: 'https://pagi-x.vercel.app',
         repoLink: 'https://github.com/Dannon10/PagiX'
     },
-    {
-        id: 6,
-        title: 'Quest',
-        imageMobile: '/images/quest-mobile.png',
-        imageDesktop: '/images/quest-desktop.png',
-        tech: [' HTML', 'CSS', 'JavaScript'],
-        shortDescription: 'Dynamic Landing Page',
-        description: 'This Quest landing page built with HTML, CSS, and JavaScript adapts smoothly to all device sizes. It features clean, semantic markup, visually appealing styling, and interactive elements that enhance user experience. This project highlights my core frontend skills in creating accessible, maintainable, and engaging web interfaces from scratch, demonstrating my strong foundation in web development and responsiveness.',
-        liveLink: 'https://quest-olive-zeta.vercel.app/',
-        repoLink: 'https://github.com/Dannon10/Quest'
-    },
-
 ]
