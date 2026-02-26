@@ -82,4 +82,5 @@ export const projects = [
         liveLink: 'https://weather-app-mocha-gamma-64.vercel.app',
         repoLink: 'https://github.com/Dannon10/React-Weather-app'
     },
+  
 ]
