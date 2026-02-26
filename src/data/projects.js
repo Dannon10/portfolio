@@ -12,12 +12,10 @@ export const projects = [
             {
                 label: 'AI Design Assistant Demo',
                 url: 'https://www.youtube.com/embed/24KFSj_E9dE'
-                // url: 'https://youtu.be/9DgNsWp5JHs'
             },
             {
                 label: 'Chat pay with Escrow Demo',
                 url: 'https://www.youtube.com/embed/6JR2mEXzCW4'
-                // url: 'https://youtu.be/6JR2mEXzCW4'
             }
         ]
         },
