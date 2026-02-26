@@ -67,6 +67,34 @@ export default function ProjectProfile() {
     navigate(`/projects/${targetId}`);
   };
 
+   const handlePlayClick = () => {
+    // add exit class to glass card
+    const card = document.querySelector('.glass-demo-card');
+    if (card) card.classList.add('exit');
+
+    // show video after short delay
+    setTimeout(() => {
+      setShowVideo(true);
+
+      // add enter animation to video
+      const video = document.querySelector('.video-wrapper');
+      if (video) video.classList.add('enter');
+    }, 200); // matches animation timing
+  };
+
+  const handleTabClick = (index) => {
+    setShowVideo(false); // hide video first
+    setActiveVideoIndex(index);
+
+    setTimeout(() => {
+      setShowVideo(true); // show selected video with animation
+      const video = document.querySelector('.video-wrapper');
+      if (video) video.classList.add('enter');
+    }, 100);
+  };
+
+  if (!demoVideos || demoVideos.length === 0) return null;
+
   return (
     <>
       {transitioning && (
@@ -100,11 +128,11 @@ export default function ProjectProfile() {
                 <p className='description-text' ref={textRef}>{description}</p>
               </span>
             </div>
+
             {/* PROJECT DEMO SECTION */}
+            {/* ================= DEMO VIDEO SECTION ================= */}
             {demoVideos && demoVideos.length > 0 && (
               <div className="project-demo">
-
-                {/* Header */}
                 <div className="project-demo-header">
                   <h2>LIVE DEMO</h2>
                   <span className="demo-subtext">See it in action</span>
@@ -119,7 +147,7 @@ export default function ProjectProfile() {
                         className={`demo-tab ${activeVideoIndex === index ? "active" : ""}`}
                         onClick={() => {
                           setActiveVideoIndex(index);
-                          setShowVideo(false); // Reset video display, requires user to click play again
+                          setShowVideo(false); // reset play
                         }}
                       >
                         {video.label}
@@ -128,8 +156,8 @@ export default function ProjectProfile() {
                   </div>
                 )}
 
-                {/* Glass Preview / Video Player */}
-                {!showVideo ? (
+                {/* Glass Play Card */}
+                {!showVideo && (
                   <div
                     className="glass-demo-card"
                     onClick={() => setShowVideo(true)}
@@ -143,21 +171,22 @@ export default function ProjectProfile() {
                       <p>Watch "{demoVideos[activeVideoIndex].label}"</p>
                     </div>
                   </div>
-                ) : (
+                )}
+
+                {/* YouTube Video */}
+                {showVideo && (
                   <div className="video-wrapper">
-                    <video
-                      src={demoVideos[activeVideoIndex].url}
-                      controls
-                      autoPlay
-                      muted={false}
-                      preload="none"
-                      onPause={() => console.log("User paused video")}
+                    <iframe
+                      src={`${demoVideos[activeVideoIndex].url}?autoplay=1&mute=0`}
+                      title={`${title} Demo`}
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                      loading="lazy"
                     />
                   </div>
                 )}
               </div>
             )}
-
             <div className="project-links">
               <a
                 href={liveLink}

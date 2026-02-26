@@ -11,11 +11,13 @@ export const projects = [
         demoVideos: [
             {
                 label: 'AI Design Assistant Demo',
-                url: '/videos/astra-video1.mp4'
+                url: 'https://www.youtube.com/embed/24KFSj_E9dE'
+                // url: 'https://youtu.be/9DgNsWp5JHs'
             },
             {
                 label: 'Chat pay with Escrow Demo',
-                url: '/videos/astra-video2.mp4'
+                url: 'https://www.youtube.com/embed/6JR2mEXzCW4'
+                // url: 'https://youtu.be/6JR2mEXzCW4'
             }
         ]
         },
@@ -32,7 +34,7 @@ export const projects = [
         demoVideos: [
             {
                 label: 'Cash Tracker Demo',
-                url: '/videos/Cash Tracker Demo.mp4'
+                url: 'https://youtube.com/embed/9DgNsWp5JHs'
             }
         ]
     },
