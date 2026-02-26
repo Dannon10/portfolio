@@ -122,6 +122,7 @@
     transform: scale(1.5) translate(-10px);
 }
 
+
 @media(min-width: 768px) {
     .project-profile-title {
         font-size: 7rem;
@@ -283,5 +284,205 @@
     .img-project-card {
         width: 100%;
         height: auto;
+    }
+}
+
+/* PREMIUM DEMO SECTION */
+
+.project-demo {
+    margin-top: 8rem;
+    padding: 0 2rem;
+}
+
+.project-demo-header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.project-demo-header h2 {
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.demo-subtext {
+    font-family: 'Satoshi', sans-serif;
+    font-size: 1.4rem;
+    opacity: 0.6;
+}
+
+/* GLASS PREVIEW CARD */
+
+.glass-demo-card {
+    position: relative;
+    height: 420px;
+    border-radius: 30px;
+    overflow: hidden;
+    cursor: pointer;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.glass-demo-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.25);
+}
+
+/* Blur layer */
+.glass-demo-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    backdrop-filter: blur(12px);
+    background: rgba(0, 0, 0, 0.25);
+}
+
+/* Gradient overlay */
+.glass-gradient {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(0,0,0,0.2),
+        rgba(0,0,0,0.6)
+    );
+}
+
+/* Center Content */
+.glass-center-content {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    text-align: center;
+}
+
+/* Play button */
+.play-button {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,0.4);
+
+    backdrop-filter: blur(20px);
+    background: rgba(255,255,255,0.1);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+
+    transition: all 0.4s ease;
+}
+
+.glass-demo-card:hover .play-button {
+    transform: scale(1.1);
+    background: rgba(255,255,255,0.2);
+}
+
+.glass-center-content p {
+    font-family: 'Satoshi', sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    opacity: 0.9;
+}
+
+/* VIDEO PLAYER */
+
+.video-wrapper {
+    border-radius: 30px;
+    overflow: hidden;
+    animation: revealVideo 0.8s ease forwards;
+}
+
+.video-wrapper iframe,
+.video-wrapper video {
+    width: 100%;
+    height: 520px;
+    border: none;
+    border-radius: 30px;
+}
+
+/* VIDEO SELECTOR TABS */
+
+.demo-selector {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.demo-tab {
+    border: 1px solid rgba(255,255,255,0.3);
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    padding: 0.8rem 1.6rem;
+    border-radius: 4rem;
+    font-family: 'Satoshi', sans-serif;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #fff;
+}
+
+.demo-tab:hover {
+    background: rgba(255,255,255,0.15);
+}
+
+.demo-tab.active {
+    background: #fff;
+    color: #000;
+    border: 1px solid #fff;
+}
+
+/* Animation */
+@keyframes revealVideo {
+    from {
+        opacity: 0;
+        transform: translateY(30px) scale(0.98);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .glass-demo-card {
+        height: 260px;
+    }
+
+    .video-wrapper iframe,
+    .video-wrapper video {
+        height: 250px;
+    }
+
+    .play-button {
+        width: 70px;
+        height: 70px;
+        font-size: 2rem;
+    }
+}
+
+@media(min-width: 1280px) {
+    .project-demo {
+        padding: 0 5rem;
     }
 }

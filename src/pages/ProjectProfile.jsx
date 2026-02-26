@@ -8,6 +8,7 @@ import Footer from '../components/Footer';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import TransitionOverlay from '../components/TransitionOverlay';
+import { FiPlay } from 'react-icons/fi';
 import './projectProfile.css';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -16,7 +17,8 @@ export default function ProjectProfile() {
   const { id } = useParams();
   const currentId = parseInt(id, 10);
   const project = projects.find(p => p.id === currentId);
-
+  const [showVideo, setShowVideo] = useState(false);
+  const [activeVideoIndex, setActiveVideoIndex] = useState(0);
   const contentRef = useRef(null);
   const stripRef = useRef(null);
   const textRef = useRef(null);
@@ -54,7 +56,7 @@ export default function ProjectProfile() {
 
   if (!project) return <div>Project not found.</div>;
 
-  const { title, tech, imageMobile, imageDesktop, description, liveLink, repoLink } = project;
+  const { title, tech, imageMobile, imageDesktop, description, liveLink, repoLink, demoVideos } = project;
   const otherProjects = projects.filter(p => p.id !== currentId);
 
   const handleNavigate = async (targetId) => {
@@ -95,9 +97,66 @@ export default function ProjectProfile() {
             <div className="description">
               <h2>DESCRIPTION</h2>
               <span className='short-span'>
-              <p className='description-text' ref={textRef}>{description}</p>
+                <p className='description-text' ref={textRef}>{description}</p>
               </span>
             </div>
+            {/* PROJECT DEMO SECTION */}
+            {demoVideos && demoVideos.length > 0 && (
+              <div className="project-demo">
+
+                {/* Header */}
+                <div className="project-demo-header">
+                  <h2>LIVE DEMO</h2>
+                  <span className="demo-subtext">See it in action</span>
+                </div>
+
+                {/* Video Selector Tabs */}
+                {demoVideos.length > 1 && (
+                  <div className="demo-selector">
+                    {demoVideos.map((video, index) => (
+                      <button
+                        key={index}
+                        className={`demo-tab ${activeVideoIndex === index ? "active" : ""}`}
+                        onClick={() => {
+                          setActiveVideoIndex(index);
+                          setShowVideo(false); // Reset video display, requires user to click play again
+                        }}
+                      >
+                        {video.label}
+                      </button>
+                    ))}
+                  </div>
+                )}
+
+                {/* Glass Preview / Video Player */}
+                {!showVideo ? (
+                  <div
+                    className="glass-demo-card"
+                    onClick={() => setShowVideo(true)}
+                    style={{ backgroundImage: `url(${imageDesktop})` }}
+                  >
+                    <div className="glass-gradient" />
+                    <div className="glass-center-content">
+                      <div className="play-button">
+                        <FiPlay />
+                      </div>
+                      <p>Watch "{demoVideos[activeVideoIndex].label}"</p>
+                    </div>
+                  </div>
+                ) : (
+                  <div className="video-wrapper">
+                    <video
+                      src={demoVideos[activeVideoIndex].url}
+                      controls
+                      autoPlay
+                      muted={false}
+                      preload="none"
+                      onPause={() => console.log("User paused video")}
+                    />
+                  </div>
+                )}
+              </div>
+            )}
 
             <div className="project-links">
               <a
@@ -112,9 +171,9 @@ export default function ProjectProfile() {
                   </span>
                   {
                     isMobile ? '' :
-                    <span className={isMobile ? "live-link-text" : "slide-item"}>
-                    Live Site <FiExternalLink />
-                  </span>
+                      <span className={isMobile ? "live-link-text" : "slide-item"}>
+                        Live Site <FiExternalLink />
+                      </span>
                   }
                 </span>
               </a>
@@ -130,10 +189,10 @@ export default function ProjectProfile() {
                     <span className={isMobile ? "live-link-text" : "slide-item"}>
                       <FaGithub className="github-link-icon" /> Repo
                     </span>
-                    { isMobile ? '' : 
+                    {isMobile ? '' :
                       <span className={isMobile ? "live-link-text" : "slide-item item2"}>
-                      <FaGithub className="github-link-icon" /> Repo
-                    </span>
+                        <FaGithub className="github-link-icon" /> Repo
+                      </span>
                     }
                   </span>
                 </a>
@@ -151,10 +210,10 @@ export default function ProjectProfile() {
                     type="button"
                   >
                     <div className="thumb-img-wrapper">
-                      <img 
-                      src={p.imageMobile} 
-                      alt={p.title} 
-                      className="thumb-img" 
+                      <img
+                        src={p.imageMobile}
+                        alt={p.title}
+                        className="thumb-img"
                       />
                     </div>
                   </button>
