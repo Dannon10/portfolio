@@ -93,7 +93,9 @@ export default function ProjectProfile() {
     }, 100);
   };
 
-  if (!demoVideos || demoVideos.length === 0) return null;
+  // Allow rendering the project profile even if there are no demo videos.
+  // The demo/video section below already guards rendering with
+  // {demoVideos && demoVideos.length > 0 && (...)}.
 
   return (
     <>

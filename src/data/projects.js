@@ -60,6 +60,17 @@ export const projects = [
     },
     {
         id: 5,
+        title: 'Scissor',
+        imageMobile: '/images/scissor-mobile2.jpg',
+        imageDesktop: '/images/scissor-desktop.png',
+        tech: [' React', 'Typescript', 'Firebase', 'CSS',],
+        shortDescription: 'Url Shortener',
+        description: 'Scissor is a full-stack URL shortening platform I built using React 18, TypeScript, and Firebase. The application allows users to shorten long URLs, create custom aliases, generate branded QR codes, and track link performance through a personalized analytics dashboard. I implemented email/password authentication with Firebase Auth and built protected routes to ensure only authenticated users can access their dashboard. Each user’s links are securely stored in Cloud Firestore and scoped to their account. To handle Firebase’s asynchronous session restoration properly, I created a global AuthContext using `onAuthStateChanged`, ensuring reliable user state management across the app. The project follows a clean, scalable architecture with business logic separated into service layers for authentication and URL management. I created a custom hook to encapsulate the shortening logic and history state, and designed a tab-based dashboard that avoids unnecessary refetching of data. The analytics section displays total clicks per link with a 7-day performance chart, while the QR generator allows users to customize colors and download PNG codes. From a frontend perspective, I built a reusable component structure, implemented responsive layouts with CSS Modules, and structured the application using React Router v6 for clear navigation flows. The project demonstrates my ability to design and build a production-style web application that integrates third-party APIs, manages authentication securely, structures scalable React architecture, and delivers a polished user experience.',
+        liveLink: 'https://scissor-url-app.netlify.app/',
+        repoLink: 'https://github.com/Dannon10/Scissorapp'
+    },
+    {
+        id: 6,
         title: 'Vendox',
         imageMobile: '/images/vendox-mobile.png',
         imageDesktop: '/images/vendox-desktop.png',
@@ -70,7 +81,7 @@ export const projects = [
         repoLink: 'https://github.com/Dannon10/vendox'
     },
     {
-        id: 6,
+        id: 7,
         title: 'Weather App',
         imageMobile: '/images/weather-mobile.png',
         imageDesktop: '/images/weather-desktop.png',
@@ -80,5 +91,4 @@ export const projects = [
         liveLink: 'https://weather-app-mocha-gamma-64.vercel.app',
         repoLink: 'https://github.com/Dannon10/React-Weather-app'
     },
-  
 ]

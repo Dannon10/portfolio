@@ -13,12 +13,12 @@ export default function Experience() {
                         <span className="experience-company">Astra</span>
                     </div>
 
-                    <p className="experience-duration">June 2025 – December 2025</p>
+                    <p className="experience-duration">June 2025 – Feb 2025</p>
 
                     <ul className="experience-details">
                         <li>
                             Built and shipped production-ready frontend features for a
-                            Figma-like web application for fashion designers and makers.
+                            fashion oriented web application for fashion designers and makers.
                         </li>
                         <li>
                             Architected and integrated a WebSocket-driven real-time chat system within an escrow workflow.
@@ -31,7 +31,7 @@ export default function Experience() {
                         <span className="experience-company">Prep Beta Solutions</span>
                     </div>
 
-                    <p className="experience-duration">January 2024 – March 2025</p>
+                    <p className="experience-duration">January 2024 – May 2025</p>
 
                     <ul className="experience-details">
                         <li>
@@ -50,7 +50,7 @@ export default function Experience() {
                         <span className="experience-company">Tiffany Berth School</span>
                     </div>
 
-                    <p className="experience-duration">September 2023 – December 2023</p>
+                    <p className="experience-duration">February 2023 – December 2023</p>
 
                     <ul className="experience-details">
                         <li>
