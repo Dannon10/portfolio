@@ -35,6 +35,18 @@ export default function ProjectProfile() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
+  // Preload all project images on mount so thumbnails and
+  // next/prev project images are cached before the user navigates
+  useEffect(() => {
+    projects.forEach((p) => {
+      const sources = [p.imageDesktop, p.imageMobile].filter(Boolean);
+      sources.forEach((src) => {
+        const img = new Image();
+        img.src = src;
+      });
+    });
+  }, []);
+
   useEffect(() => {
     if (transitioning && overlayRef.current) {
       const timer = setTimeout(() => {

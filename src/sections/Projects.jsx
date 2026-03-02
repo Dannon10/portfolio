@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import ProjectCard from '../components/ProjectCard';
 import { projects } from '../data/projects';
 import { BsList, BsGrid } from 'react-icons/bs';
@@ -12,6 +12,16 @@ export default function Projects({
 }) {
   const [viewMode, setViewMode] = useState('list');
   const [hoveredId, setHoveredId] = useState(null);
+
+  useEffect(() => {
+    projects.forEach((project) => {
+      const sources = [project.imageDesktop, project.imageMobile].filter(Boolean);
+      sources.forEach((src) => {
+        const img = new Image();
+        img.src = src;
+      });
+    });
+  }, []);
 
   const refs = useRef([]);
   refs.current = [];
