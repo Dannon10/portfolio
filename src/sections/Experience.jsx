@@ -6,7 +6,6 @@ export default function Experience() {
             <h2 className="section-title">EXPERIENCE</h2>
 
             <div className="experience-list">
-                {/* Astra Labs */}
                 <div className="experience-item">
                     <div className="experience-header">
                         <h3>Frontend & Web3 Developer</h3>
@@ -14,16 +13,6 @@ export default function Experience() {
                     </div>
 
                     <p className="experience-duration">June 2025 – Feb 2025</p>
-
-                    <ul className="experience-details">
-                        <li>
-                            Built and shipped production-ready frontend features for a
-                            fashion oriented web application for fashion designers and makers.
-                        </li>
-                        <li>
-                            Architected and integrated a WebSocket-driven real-time chat system within an escrow workflow.
-                        </li>
-                    </ul>
                 </div>
                 <div className="experience-item">
                     <div className="experience-header">
@@ -32,17 +21,6 @@ export default function Experience() {
                     </div>
 
                     <p className="experience-duration">January 2024 – May 2025</p>
-
-                    <ul className="experience-details">
-                        <li>
-                            Developed responsive user interfaces and reusable components for
-                            client-facing products.
-                        </li>
-                        <li>
-                            Collaborated with designers and backend developers to deliver
-                            production features.
-                        </li>
-                    </ul>
                 </div>
                 <div className="experience-item">
                     <div className="experience-header">
@@ -51,15 +29,6 @@ export default function Experience() {
                     </div>
 
                     <p className="experience-duration">February 2023 – December 2023</p>
-
-                    <ul className="experience-details">
-                        <li>
-                            Designed and maintained responsive user interfaces for the school's website and internal academic platforms
-                        </li>
-                        <li>
-                            Developed 8+ pages for admissions, announcements, academic calendars, and student resources using React.js, reducing load time by 40%.
-                        </li>
-                    </ul>
                 </div>
             </div>
 

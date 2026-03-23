@@ -45,7 +45,13 @@ export const projects = [
         shortDescription: 'Modern Notes App',
         description: 'A feature-rich task management tool built with React and TypeScript, designed to help users efficiently organize their daily tasks. The app allows you to add, edit, delete, filter, prioritize, and schedule tasks, complete with reminder notifications, drag-and-drop reordering, and Firebase sync for cloud-based persistence. This project demonstrates a strong grasp of state management, custom hooks, component architecture, and real-time data syncing, making it a well-rounded showcase of my frontend development skills.',
         liveLink: 'https://task-manager-1-five.vercel.app/',
-        repoLink: 'https://github.com/Dannon10/task-manager'
+        repoLink: 'https://github.com/Dannon10/task-manager',
+        demoVideos: [
+            {
+                label: 'Task Manager Demo',
+                url: 'https://youtube.com/embed/VDjq-MyY8Rc'
+            }
+        ]
     },
     {
         id: 4,
@@ -56,7 +62,13 @@ export const projects = [
         shortDescription: 'Url Shortener',
         description: 'Scissors is a full-stack URL shortening platform I built using React 18, TypeScript, and Firebase. The application allows users to shorten long URLs, create custom aliases, generate branded QR codes, and track link performance through a personalized analytics dashboard. I implemented email/password authentication with Firebase Auth and built protected routes to ensure only authenticated users can access their dashboard. Each user’s links are securely stored in Cloud Firestore and scoped to their account. To handle Firebase’s asynchronous session restoration properly, I created a global AuthContext using `onAuthStateChanged`, ensuring reliable user state management across the app. The project follows a clean, scalable architecture with business logic separated into service layers for authentication and URL management. I created a custom hook to encapsulate the shortening logic and history state, and designed a tab-based dashboard that avoids unnecessary refetching of data. The analytics section displays total clicks per link with a 7-day performance chart, while the QR generator allows users to customize colors and download PNG codes. From a frontend perspective, I built a reusable component structure, implemented responsive layouts with CSS Modules, and structured the application using React Router v6 for clear navigation flows. The project demonstrates my ability to design and build a production-style web application that integrates third-party APIs, manages authentication securely, structures scalable React architecture, and delivers a polished user experience.',
         liveLink: 'https://scissor-url-app.netlify.app/',
-        repoLink: 'https://github.com/Dannon10/Scissorapp'
+        repoLink: 'https://github.com/Dannon10/Scissorapp',
+        demoVideos: [
+            {
+                label: 'Scissors Demo',
+                url: 'https://youtube.com/embed/IWTBHFBA7xM'
+            }
+        ]
     },
     {
         id: 5,
