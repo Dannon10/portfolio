@@ -49,7 +49,7 @@ export const projects = [
         demoVideos: [
             {
                 label: 'Task Manager Demo',
-                url: 'https://youtube.com/embed/VDjq-MyY8Rc'
+                url: 'https://youtube.com/embed/IWTBHFBA7xM'
             }
         ]
     },
@@ -66,7 +66,7 @@ export const projects = [
         demoVideos: [
             {
                 label: 'Scissors Demo',
-                url: 'https://youtube.com/embed/IWTBHFBA7xM'
+                url: 'https://youtube.com/embed/VDjq-MyY8Rc'
             }
         ]
     },
