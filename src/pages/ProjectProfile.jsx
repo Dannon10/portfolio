@@ -35,8 +35,6 @@ export default function ProjectProfile() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  // Preload all project images on mount so thumbnails and
-  // next/prev project images are cached before the user navigates
   useEffect(() => {
     projects.forEach((p) => {
       const sources = [p.imageDesktop, p.imageMobile].filter(Boolean);
@@ -80,34 +78,27 @@ export default function ProjectProfile() {
   };
 
    const handlePlayClick = () => {
-    // add exit class to glass card
     const card = document.querySelector('.glass-demo-card');
     if (card) card.classList.add('exit');
 
-    // show video after short delay
     setTimeout(() => {
       setShowVideo(true);
 
-      // add enter animation to video
       const video = document.querySelector('.video-wrapper');
       if (video) video.classList.add('enter');
-    }, 200); // matches animation timing
+    }, 200);
   };
 
   const handleTabClick = (index) => {
-    setShowVideo(false); // hide video first
+    setShowVideo(false);
     setActiveVideoIndex(index);
 
     setTimeout(() => {
-      setShowVideo(true); // show selected video with animation
+      setShowVideo(true); 
       const video = document.querySelector('.video-wrapper');
       if (video) video.classList.add('enter');
     }, 100);
   };
-
-  // Allow rendering the project profile even if there are no demo videos.
-  // The demo/video section below already guards rendering with
-  // {demoVideos && demoVideos.length > 0 && (...)}.
 
   return (
     <>
@@ -143,8 +134,50 @@ export default function ProjectProfile() {
               </span>
             </div>
 
+                        <div className="project-links">
+              {liveLink && (
+                <a
+                href={liveLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project-link hover-slide"
+                >
+                <span className={isMobile ? "project-profile-live-link" : "slides-wrapper"}>
+                  <span className={isMobile ? "live-link-text" : "slide-item"}>
+                    Live Site <FiExternalLink />
+                  </span>
+                  {
+                    isMobile ? '' :
+                      <span className={isMobile ? "live-link-text" : "slide-item"}>
+                        Live Site <FiExternalLink />
+                      </span>
+                  }
+                </span>
+              </a>
+                    )}
+
+              {repoLink && (
+                <a
+                  href={repoLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="project-link hover-slide"
+                >
+                  <span className={isMobile ? "project-profile-live-link" : "slides-wrapper"}>
+                    <span className={isMobile ? "live-link-text" : "slide-item"}>
+                      <FaGithub className="github-link-icon" /> Repo
+                    </span>
+                    {isMobile ? '' :
+                      <span className={isMobile ? "live-link-text" : "slide-item item2"}>
+                        <FaGithub className="github-link-icon" /> Repo
+                      </span>
+                    }
+                  </span>
+                </a>
+              )}
+            </div>
+
             {/* PROJECT DEMO SECTION */}
-            {/* ================= DEMO VIDEO SECTION ================= */}
             {demoVideos && demoVideos.length > 0 && (
               <div className="project-demo">
                 <div className="project-demo-header">
@@ -161,7 +194,7 @@ export default function ProjectProfile() {
                         className={`demo-tab ${activeVideoIndex === index ? "active" : ""}`}
                         onClick={() => {
                           setActiveVideoIndex(index);
-                          setShowVideo(false); // reset play
+                          setShowVideo(false);
                         }}
                       >
                         {video.label}
@@ -201,46 +234,6 @@ export default function ProjectProfile() {
                 )}
               </div>
             )}
-            <div className="project-links">
-              <a
-                href={liveLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="project-link hover-slide"
-              >
-                <span className={isMobile ? "project-profile-live-link" : "slides-wrapper"}>
-                  <span className={isMobile ? "live-link-text" : "slide-item"}>
-                    Live Site <FiExternalLink />
-                  </span>
-                  {
-                    isMobile ? '' :
-                      <span className={isMobile ? "live-link-text" : "slide-item"}>
-                        Live Site <FiExternalLink />
-                      </span>
-                  }
-                </span>
-              </a>
-
-              {repoLink && (
-                <a
-                  href={repoLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="project-link hover-slide"
-                >
-                  <span className={isMobile ? "project-profile-live-link" : "slides-wrapper"}>
-                    <span className={isMobile ? "live-link-text" : "slide-item"}>
-                      <FaGithub className="github-link-icon" /> Repo
-                    </span>
-                    {isMobile ? '' :
-                      <span className={isMobile ? "live-link-text" : "slide-item item2"}>
-                        <FaGithub className="github-link-icon" /> Repo
-                      </span>
-                    }
-                  </span>
-                </a>
-              )}
-            </div>
 
             <div className="project-strip" ref={stripRef}>
               <h3 className="other-projects-title">MOVE TO ANOTHER PROJECT</h3>

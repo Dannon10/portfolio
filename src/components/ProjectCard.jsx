@@ -175,7 +175,10 @@ const ProjectCard = forwardRef(({
   const dimmed = hoveredId !== null && hoveredId !== id;
 
   return (
-    <a href={`/projects/${id}`} onClick={handleClick} className='project-card-link'>
+    <a
+      href={`/projects/${id}`}
+      onClick={handleClick}
+      className='project-card-link'>
       <div
         ref={cardRef}
         className={`${cardClass} ${dimmed ? 'dimmed' : ''}`}

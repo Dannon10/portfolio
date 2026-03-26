@@ -18,13 +18,33 @@ export const projects = [
                 url: 'https://www.youtube.com/embed/6JR2mEXzCW4'
             }
         ]
-        },
-        {
+    },
+    {
         id: 2,
+        title: 'DashDish',
+        imageMobile: '/images/dashdish-mobile1.jpg',
+        imageDesktop: '/images/Dashdish-desktop.jpeg',
+        tech: ['React Native', 'Expo', 'TypeScript', 'Supabase', 'Mapbox', 'Zustand', 'Paystack', 'Tailwind CSS', 'Jest', 'React Native Testing Library'],
+        shortDescription: 'Full-Stack Food Delivery App',
+        description: 'DashDish is a full-stack food delivery mobile application built with React Native and Expo, featuring a dual-role system for customers and drivers with real-time order tracking, live GPS location updates, and integrated payments. The app targets the Nigerian market with ₦ currency, Lagos coordinates, and Paystack as the payment gateway. Customers can browse restaurants, build a cart, geocode their delivery address, pay via Paystack, and track their order live on a Mapbox map as the driver moves toward them in real time. Drivers receive order requests instantly via Supabase Realtime, can swipe right to accept or left to decline, and navigate an active delivery screen with a live route polyline, status update buttons, and GPS broadcasting. I architected the entire application from scratch, designing the database schema with Row Level Security across all tables, building a simulation engine that manages the full order lifecycle across six statuses with atomic race condition prevention, and implementing smooth driver marker animation using requestAnimationFrame interpolation between GPS coordinates for a natural movement feel. I engineered a persistent decline system that stores rejected orders in Supabase so they never reappear across sessions or devices, and built a collapsible bottom sheet on the tracking screen using the Animated API with snap-point gesture handling. I integrated Paystack on both web (inline JS popup) and native (WebView) platforms, and built an earnings dashboard with a weekly bar chart, Haversine-based distance calculation, and period-based filtering all without additional API calls.',
+        repoLink: 'https://github.com/Dannon10/dashdish',
+        demoVideos: [
+            {
+                label: 'Customer Order Flow Demo',
+                url: 'https://www.youtube.com/embed/2VBcOTXbZlE'
+            },
+            {
+                label: 'Driver Tracking Demo',
+                url: 'https://www.youtube.com/embed/4wl96uLV_aE'
+            }
+        ]
+    },
+    {
+        id: 3,
         title: 'Cash Tracker',
         imageMobile: '/images/cash-tracker-mobile1.jpg',
         imageDesktop: '/images/cash-tracker-desktop.jpeg',
-        tech: [ 'React Native', 'Expo', 'Typescript', 'Supabase', 'Zustand','Jest', 'Tailwind', 'Async Storage', 'Groq AI (Whisper + LLaMA)', 'React Native Testing Library', 'Netlify' ],
+        tech: ['React Native', 'Expo', 'Typescript', 'Supabase', 'Zustand', 'Jest', 'Tailwind', 'Async Storage', 'Groq AI (Whisper + LLaMA)', 'React Native Testing Library', 'Netlify'],
         shortDescription: 'Fintech Finance Tracker',
         description: 'Cash Tracker is a full-stack cross-platform transaction tracking mobile application I designed and built from scratch using React Native and Expo. The app allows users to log, categorize, and analyze their income and expenses through a clean, intuitive interface with support for both dark and light themes. One of the standout features I\'m most proud of is the AI-powered voice input system users can speak naturally, and the app uses Groq\'s Whisper model to transcribe the audio and LLaMA 3 to intelligently parse the transaction details, including amount, category, and type, before populating the form automatically. This showcases my ability to integrate third-party AI APIs and build practical, user-focused features around them. On the backend, I used Supabase for authentication and real-time database management, implementing a complete auth flow with sign up, login, and protected routes. State management is handled with Zustand, keeping the app performant and the codebase clean without unnecessary complexity. The app also features a reports screen with interactive pie charts and monthly trend analysis built with React Native Gifted Charts, giving users meaningful insights into their spending patterns. I implemented animated onboarding screens, skeleton loading states, swipe-to-delete gestures, pull-to-refresh demonstrating strong attention to UI/UX detail. To ensure code reliability I wrote unit tests covering store logic, authentication flows, and component behavior using Jest and React Native Testing Library. The app is deployed as a web application on Netlify. This project demonstrates my skills in React Native, TypeScript, AI API integration, backend-as-a-service architecture, state management, testing, and delivering polished production-ready mobile applications.',
         liveLink: 'https://mycashtracker-app.netlify.app/',
@@ -37,11 +57,11 @@ export const projects = [
         ]
     },
     {
-        id: 3,
+        id: 4,
         title: 'Task Manager',
         imageMobile: '/images/todo-mobile.jpg',
         imageDesktop: '/images/todo-desktop.png',
-        tech: [ 'React', 'Typescript', 'Firebase', 'CSS', ],
+        tech: ['React', 'Typescript', 'Firebase', 'CSS',],
         shortDescription: 'Modern Notes App',
         description: 'A feature-rich task management tool built with React and TypeScript, designed to help users efficiently organize their daily tasks. The app allows you to add, edit, delete, filter, prioritize, and schedule tasks, complete with reminder notifications, drag-and-drop reordering, and Firebase sync for cloud-based persistence. This project demonstrates a strong grasp of state management, custom hooks, component architecture, and real-time data syncing, making it a well-rounded showcase of my frontend development skills.',
         liveLink: 'https://task-manager-1-five.vercel.app/',
@@ -54,7 +74,7 @@ export const projects = [
         ]
     },
     {
-        id: 4,
+        id: 5,
         title: 'Scissors',
         imageMobile: '/images/scissor-mobile2.jpg',
         imageDesktop: '/images/scissor-desktop.png',
@@ -71,7 +91,7 @@ export const projects = [
         ]
     },
     {
-        id: 5,
+        id: 6,
         title: 'LendR',
         imageMobile: '/images/lendr-mobile.jpeg',
         imageDesktop: '/images/lendr-desktop.png',
@@ -82,7 +102,7 @@ export const projects = [
         repoLink: 'https://github.com/Dannon10/lendR'
     },
     {
-        id: 6,
+        id: 7,
         title: 'Vendox',
         imageMobile: '/images/vendox-mobile.png',
         imageDesktop: '/images/vendox-desktop.png',
@@ -93,7 +113,7 @@ export const projects = [
         repoLink: 'https://github.com/Dannon10/vendox'
     },
     {
-        id: 7,
+        id: 8,
         title: 'Weather App',
         imageMobile: '/images/weather-mobile.png',
         imageDesktop: '/images/weather-desktop.png',
