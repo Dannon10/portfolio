@@ -35,7 +35,7 @@ export default function Footer() {
     <footer>
       <div className="foot">
         <div className="foot-text">
-          <h4>2025 &copy; Edition.</h4>
+          <h4>2026 &copy; Edition.</h4>
           <div className="live-update">
             <p>{formatted}</p>
           </div>
