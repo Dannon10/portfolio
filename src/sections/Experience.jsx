@@ -12,7 +12,7 @@ export default function Experience() {
                         <span className="experience-company">Astra</span>
                     </div>
 
-                    <p className="experience-duration">June 2025 – Feb 2025</p>
+                    <p className="experience-duration">June 2025 – Present</p>
                 </div>
                 <div className="experience-item">
                     <div className="experience-header">
