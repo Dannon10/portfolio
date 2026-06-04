@@ -21,6 +21,26 @@ export const projects = [
     },
     {
         id: 2,
+        title: 'KDN News',
+        imageMobile: '/images/kdn-tall.webp',
+        imageDesktop: '/images/kdn.webp',
+        tech: [' React', 'Next.js', 'Typescript', 'AWS', 'Tanstack', 'Zustand', 'FAST API', 'Jest', 'Unit Testing'],
+        shortDescription: 'Full-Featured News Platform',
+        description: 'KDN News Network is a full-featured news platform with distinct reader and admin experiences. Readers can browse and read published articles, bookmark favorites, and manage their accounts with full login and logout support. Admins can create, publish, and manage articles with cover image uploads via AWS S3 presigned URLs. The platform includes Google OAuth and OTP-based authentication, protected routes, and a custom axios interceptor handling token refresh and failed-request queuing. Built with Next.js, TypeScript, Redux Toolkit, Tailwind CSS, and AWS S3.',
+        liveLink: 'http://kdnnn.com/',
+    },
+    // {
+    //     id: 3,
+    //     title: 'Stuuudio',
+    //     imageMobile: '/images/stuuudio-mobile.webp',
+    //     imageDesktop: '/images/stuuudio-desktop.webp',
+    //     tech: [' React', 'Next.js', 'Typescript', 'GSAP'],
+    //     shortDescription: 'Creative Agency Portfolio',
+    //             description: 'I built Stuuudio for a creative agency that refused to settle for a generic portfolio. Developed with React, Next.js, and TypeScript, it delivers a sharp visual identity, fluid animations, and detailed case studies — giving the agency a platform as bold as the work they put out.',
+    //     liveLink: 'https://stuuudio.org/',
+    // },
+    {
+        id: 4,
         title: 'DashDish',
         imageMobile: '/images/dashdish-mobile1.jpg',
         imageDesktop: '/images/Dashdish-desktop.jpeg',
@@ -41,7 +61,7 @@ export const projects = [
         ]
     },
     {
-        id: 3,
+        id: 5,
         title: 'Cash Tracker',
         imageMobile: '/images/cash-tracker-mobile1.jpg',
         imageDesktop: '/images/cash-tracker-desktop.jpeg',
@@ -58,7 +78,7 @@ export const projects = [
         ]
     },
     {
-        id: 4,
+        id: 6,
         title: 'Task Manager',
         imageMobile: '/images/todo-mobile.jpg',
         imageDesktop: '/images/todo-desktop.png',
@@ -75,7 +95,7 @@ export const projects = [
         ]
     },
     {
-        id: 5,
+        id: 7,
         title: 'Scissors',
         imageMobile: '/images/scissor-mobile2.jpg',
         imageDesktop: '/images/scissor-desktop.png',
@@ -91,19 +111,19 @@ export const projects = [
             }
         ]
     },
+    // {
+    //     id: 8,
+    //     title: 'LendR',
+    //     imageMobile: '/images/lendr-mobile.jpeg',
+    //     imageDesktop: '/images/lendr-desktop.png',
+    //     tech: [' React', 'Next.js', 'Typescript', 'Tanstack', 'SAAS/SCSS', 'Jest', 'Unit Testing'],
+    //     shortDescription: 'Admin Dashboard',
+    //     description: 'LendR is a modern user management dashboard built to simulate a real-world fintech admin system. The application fetches and displays user data from a mock API, enabling structured viewing, pagination, and detailed user records through a clean and responsive dashboard interface. The mock backend was created using a JSON data generator and deployed on Render, allowing the frontend to consume realistic API endpoints similar to a production environment. The dashboard supports paginated user lists and individual user detail views, mirroring how enterprise admin tools handle large datasets. The frontend was built with Next.js and React, written entirely in TypeScript for type safety and maintainability. Styling was handled using SCSS, ensuring a scalable and well-structured design system. The project also includes unit and integration tests written with Jest, improving reliability and validating core functionality such as data fetching and UI rendering. LendR demonstrates strong understanding of frontend architecture, API integration, testing, and dashboard-style application design commonly used in fintech and enterprise platforms.',
+    //     liveLink: 'https://dannon-abayomi-lendsqr-fe-test.vercel.app/',
+    //     repoLink: 'https://github.com/Dannon10/lendR'
+    // },
     {
-        id: 6,
-        title: 'LendR',
-        imageMobile: '/images/lendr-mobile.jpeg',
-        imageDesktop: '/images/lendr-desktop.png',
-        tech: [' React', 'Next.js', 'Typescript', 'Tanstack', 'SAAS/SCSS', 'Jest', 'Unit Testing'],
-        shortDescription: 'Admin Dashboard',
-        description: 'LendR is a modern user management dashboard built to simulate a real-world fintech admin system. The application fetches and displays user data from a mock API, enabling structured viewing, pagination, and detailed user records through a clean and responsive dashboard interface. The mock backend was created using a JSON data generator and deployed on Render, allowing the frontend to consume realistic API endpoints similar to a production environment. The dashboard supports paginated user lists and individual user detail views, mirroring how enterprise admin tools handle large datasets. The frontend was built with Next.js and React, written entirely in TypeScript for type safety and maintainability. Styling was handled using SCSS, ensuring a scalable and well-structured design system. The project also includes unit and integration tests written with Jest, improving reliability and validating core functionality such as data fetching and UI rendering. LendR demonstrates strong understanding of frontend architecture, API integration, testing, and dashboard-style application design commonly used in fintech and enterprise platforms.',
-        liveLink: 'https://dannon-abayomi-lendsqr-fe-test.vercel.app/',
-        repoLink: 'https://github.com/Dannon10/lendR'
-    },
-    {
-        id: 7,
+        id: 9,
         title: 'Vendox',
         imageMobile: '/images/vendox-mobile.png',
         imageDesktop: '/images/vendox-desktop.png',
@@ -112,16 +132,5 @@ export const projects = [
         description: 'A sleek and responsive e-commerce web application built with React 19, Vite, and Redux for efficient state management. The app integrates with a public products API to dynamically fetch and display real product data. Key features include category-based browsing, detailed product views, and a fully functional cart system. This project demonstrates my strengths in API integration, global state management with Redux, component-based architecture, and building responsive, high-performance UIs for both desktop and mobile.',
         liveLink: 'https://vendox-rho.vercel.app',
         repoLink: 'https://github.com/Dannon10/vendox'
-    },
-    {
-        id: 8,
-        title: 'Weather App',
-        imageMobile: '/images/weather-mobile.png',
-        imageDesktop: '/images/weather-desktop.png',
-        tech: ['React', 'CSS', 'JavaScript'],
-        shortDescription: 'Weather Checker',
-        description: 'React Weather App is a modern weather-checking application built with React 19, designed to provide users with real-time weather updates for any city worldwide. By integrating with a third-party weather API, it fetches current temperature, weather conditions, humidity and wind speed. The app features a responsive layout, clean UI, and intuitive search functionality, allowing users to quickly access accurate forecasts. This project showcases API integration, user-friendly interface design, and effective state management using React hooks—highlighting your strengths in building practical, data-driven applications.',
-        liveLink: 'https://weather-app-mocha-gamma-64.vercel.app',
-        repoLink: 'https://github.com/Dannon10/React-Weather-app'
     },
 ]
