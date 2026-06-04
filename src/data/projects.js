@@ -21,9 +21,9 @@ export const projects = [
     },
     {
         id: 2,
-        title: 'KDN News',
+        title: 'KDN News Network',
         imageMobile: '/images/kdn-tall.webp',
-        imageDesktop: '/images/kdn.webp',
+        imageDesktop: '/images/kdn.png',
         tech: [' React', 'Next.js', 'Typescript', 'AWS', 'Tanstack', 'Zustand', 'FAST API', 'Jest', 'Unit Testing'],
         shortDescription: 'Full-Featured News Platform',
         description: 'KDN News Network is a full-featured news platform with distinct reader and admin experiences. Readers can browse and read published articles, bookmark favorites, and manage their accounts with full login and logout support. Admins can create, publish, and manage articles with cover image uploads via AWS S3 presigned URLs. The platform includes Google OAuth and OTP-based authentication, protected routes, and a custom axios interceptor handling token refresh and failed-request queuing. Built with Next.js, TypeScript, Redux Toolkit, Tailwind CSS, and AWS S3.',
