@@ -38,10 +38,11 @@ export default function Skills() {
                                     'React.js', 'Next.js', 'React Native', 'Expo', 'Vue.js',
                                     'Tailwind CSS', 'SASS / SCSS',
                                     'Redux', 'Zustand',
+                                    'React Query / TanStack Query',
                                     'Jest', 'Unit Testing',
                                     'GSAP', 'Framer Motion',
-                                    'REST APIs', 'WebSockets', 'Realtime APIs', 'Geolocation APIs',
-                                    'Mapbox', 'Paystack',
+                                    'REST APIs', 'WebSockets', 'Geolocation APIs',
+                                    'Mapbox', 'AWS S3', 'Paystack', 'Stripe',
                                     'Web3 Integration', 'Smart Contract Interaction',
                                     'Supabase', 'PostgreSQL', 'Firebase',
                                     'Git/GitHub', 'Agile/Scrum'
