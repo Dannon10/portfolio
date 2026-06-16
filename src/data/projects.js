@@ -19,8 +19,18 @@ export const projects = [
             }
         ]
     },
+{
+    id: 2,
+    title: "Fufu Planet",
+    imageMobile: '/images/fufu-planet-mobile.webp',
+    imageDesktop: '/images/fufu-planet-desktop.webp',
+    tech: ['React', 'Next.js', 'TypeScript', 'AWS', 'Zustand', 'React Query', 'Tailwind CSS', 'REST API'],
+    shortDescription: 'Food Delivery Web-App',
+    description: 'Led the frontend integration of the full admin panel for Fufu Planet, an African food delivery platform, connecting the entire dashboard to a live REST API built by the backend team. Implemented a consistent four-layer architecture (types, services, query keys, hooks) across every module, covering authentication and route guarding, vendor management, order tracking, support tickets, and platform settings. Handled image upload and retrieval through AWS S3, including uploading vendor and product images and fetching stored images back into the UI. Used React Query for data fetching, caching, and background sync, and Zustand for global state management, replacing prop-heavy patterns with a cleaner, more maintainable structure. Styled the entire interface with Tailwind CSS and resolved a range of integration issues along the way, including TypeScript type mismatches, broken routing guards, and inconsistent activity feed rendering, working closely with the backend developer to keep the API contract in sync as features evolved.',
+    liveLink: 'https://fufuplanet.com',
+},
     {
-        id: 2,
+        id: 3,
         title: 'KDN News Network',
         imageMobile: '/images/kdn-tall.webp',
         imageDesktop: '/images/kdn.png',
@@ -110,27 +120,5 @@ export const projects = [
                 url: 'https://youtube.com/embed/VDjq-MyY8Rc'
             }
         ]
-    },
-    // {
-    //     id: 8,
-    //     title: 'LendR',
-    //     imageMobile: '/images/lendr-mobile.jpeg',
-    //     imageDesktop: '/images/lendr-desktop.png',
-    //     tech: [' React', 'Next.js', 'Typescript', 'Tanstack', 'SAAS/SCSS', 'Jest', 'Unit Testing'],
-    //     shortDescription: 'Admin Dashboard',
-    //     description: 'LendR is a modern user management dashboard built to simulate a real-world fintech admin system. The application fetches and displays user data from a mock API, enabling structured viewing, pagination, and detailed user records through a clean and responsive dashboard interface. The mock backend was created using a JSON data generator and deployed on Render, allowing the frontend to consume realistic API endpoints similar to a production environment. The dashboard supports paginated user lists and individual user detail views, mirroring how enterprise admin tools handle large datasets. The frontend was built with Next.js and React, written entirely in TypeScript for type safety and maintainability. Styling was handled using SCSS, ensuring a scalable and well-structured design system. The project also includes unit and integration tests written with Jest, improving reliability and validating core functionality such as data fetching and UI rendering. LendR demonstrates strong understanding of frontend architecture, API integration, testing, and dashboard-style application design commonly used in fintech and enterprise platforms.',
-    //     liveLink: 'https://dannon-abayomi-lendsqr-fe-test.vercel.app/',
-    //     repoLink: 'https://github.com/Dannon10/lendR'
-    // },
-    {
-        id: 9,
-        title: 'Vendox',
-        imageMobile: '/images/vendox-mobile.png',
-        imageDesktop: '/images/vendox-desktop.png',
-        tech: [' React', 'Redux', 'Javascript', 'CSS',],
-        shortDescription: 'Mini E-commerce website',
-        description: 'A sleek and responsive e-commerce web application built with React 19, Vite, and Redux for efficient state management. The app integrates with a public products API to dynamically fetch and display real product data. Key features include category-based browsing, detailed product views, and a fully functional cart system. This project demonstrates my strengths in API integration, global state management with Redux, component-based architecture, and building responsive, high-performance UIs for both desktop and mobile.',
-        liveLink: 'https://vendox-rho.vercel.app',
-        repoLink: 'https://github.com/Dannon10/vendox'
     },
 ]
