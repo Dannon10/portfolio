@@ -115,6 +115,7 @@ img {
         opacity: 0.3;
         transition: opacity 0.3 ease;
     }
+
 }
 
 @media(min-width: 1280px) {
@@ -132,6 +133,7 @@ img {
         font-size: 7rem;
         letter-spacing: 0;
     }
+
 
     .letter {
         display: inline-block;
