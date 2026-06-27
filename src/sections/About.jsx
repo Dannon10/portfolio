@@ -90,7 +90,7 @@ export default function About() {
             </div>
             <img
                 ref={pictureRef}
-                src="/images/about-pic-4.jpg"
+                src="/images/about-pic-1.jpg"
                 alt="Dannon"
                 className='my-picture'
             />
