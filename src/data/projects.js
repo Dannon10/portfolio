@@ -50,7 +50,7 @@ export const projects = [
         liveLink: 'http://kdnnn.com/',
     },
     {
-        id: 4,
+        id: 5,
         title: 'DashDish',
         imageMobile: '/images/dashdish-mobile1.jpg',
         imageDesktop: '/images/Dashdish-desktop.jpeg',
@@ -71,7 +71,7 @@ export const projects = [
         ]
     },
     {
-        id: 5,
+        id: 6,
         title: 'Cash Tracker',
         imageMobile: '/images/cash-tracker-mobile1.jpg',
         imageDesktop: '/images/cash-tracker-desktop.jpeg',
@@ -105,7 +105,7 @@ export const projects = [
     //     ]
     // },
     {
-        id: 6,
+        id: 7,
         title: 'Scissors',
         imageMobile: '/images/scissor-mobile2.jpg',
         imageDesktop: '/images/scissor-desktop.png',
