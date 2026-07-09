@@ -29,8 +29,18 @@ export const projects = [
     description: 'Led the frontend integration of the full admin panel for Fufu Planet, an African food delivery platform, connecting the entire dashboard to a live REST API built by the backend team. Implemented a consistent four-layer architecture (types, services, query keys, hooks) across every module, covering authentication and route guarding, vendor management, order tracking, support tickets, and platform settings. Handled image upload and retrieval through AWS S3, including uploading vendor and product images and fetching stored images back into the UI. Used React Query for data fetching, caching, and background sync, and Zustand for global state management, replacing prop-heavy patterns with a cleaner, more maintainable structure. Styled the entire interface with Tailwind CSS and resolved a range of integration issues along the way, including TypeScript type mismatches, broken routing guards, and inconsistent activity feed rendering, working closely with the backend developer to keep the API contract in sync as features evolved.',
     liveLink: 'https://fufuplanet.com',
 },
+{
+    id: 3,
+    title: 'Stuuudio',
+    imageMobile: '/images/stuuudio-mobile.png',
+    imageDesktop: '/images/stuuudio-desktop.png',
+    tech: [' React', 'Next.js', 'Typescript', 'GSAP', 'Tailwind CSS', 'Cloudinary'],
+    shortDescription: 'Creative Agency Portfolio',
+            description: 'I built Stuuudio as a bespoke portfolio website for a creative agency that wanted a digital presence as distinctive as its work. Using React, Next.js, and TypeScript, I created a fast, modern experience with a strong visual identity, refined interaction design, and smooth motion through GSAP and Tailwind CSS. The site highlights the agency’s projects through immersive case studies and thoughtfully structured content, giving their work the space and presentation it deserves.',
+    liveLink: 'https://stuuudio.org/',
+},
     {
-        id: 3,
+        id: 4,
         title: 'KDN News Network',
         imageMobile: '/images/kdn-tall.webp',
         imageDesktop: '/images/kdn.png',
@@ -39,16 +49,6 @@ export const projects = [
         description: 'KDN News Network is a full-featured news platform with distinct reader and admin experiences. Readers can browse and read published articles, bookmark favorites, and manage their accounts with full login and logout support. Admins can create, publish, and manage articles with cover image uploads via AWS S3 presigned URLs. The platform includes Google OAuth and OTP-based authentication, protected routes, and a custom axios interceptor handling token refresh and failed-request queuing. Built with Next.js, TypeScript, Redux Toolkit, Tailwind CSS, and AWS S3.',
         liveLink: 'http://kdnnn.com/',
     },
-    // {
-    //     id: 3,
-    //     title: 'Stuuudio',
-    //     imageMobile: '/images/stuuudio-mobile.webp',
-    //     imageDesktop: '/images/stuuudio-desktop.webp',
-    //     tech: [' React', 'Next.js', 'Typescript', 'GSAP'],
-    //     shortDescription: 'Creative Agency Portfolio',
-    //             description: 'I built Stuuudio for a creative agency that refused to settle for a generic portfolio. Developed with React, Next.js, and TypeScript, it delivers a sharp visual identity, fluid animations, and detailed case studies — giving the agency a platform as bold as the work they put out.',
-    //     liveLink: 'https://stuuudio.org/',
-    // },
     {
         id: 4,
         title: 'DashDish',
@@ -87,25 +87,25 @@ export const projects = [
             }
         ]
     },
+    // {
+    //     id: 6,
+    //     title: 'Task Manager',
+    //     imageMobile: '/images/todo-mobile.jpg',
+    //     imageDesktop: '/images/todo-desktop.png',
+    //     tech: ['React', 'Typescript', 'Firebase', 'CSS',],
+    //     shortDescription: 'Modern Notes App',
+    //     description: 'A feature-rich task management tool built with React and TypeScript, designed to help users efficiently organize their daily tasks. The app allows you to add, edit, delete, filter, prioritize, and schedule tasks, complete with reminder notifications, drag-and-drop reordering, and Firebase sync for cloud-based persistence. This project demonstrates a strong grasp of state management, custom hooks, component architecture, and real-time data syncing, making it a well-rounded showcase of my frontend development skills.',
+    //     liveLink: 'https://task-manager-1-five.vercel.app/',
+    //     repoLink: 'https://github.com/Dannon10/task-manager',
+    //     demoVideos: [
+    //         {
+    //             label: 'Task Manager Demo',
+    //             url: 'https://youtube.com/embed/IWTBHFBA7xM'
+    //         }
+    //     ]
+    // },
     {
         id: 6,
-        title: 'Task Manager',
-        imageMobile: '/images/todo-mobile.jpg',
-        imageDesktop: '/images/todo-desktop.png',
-        tech: ['React', 'Typescript', 'Firebase', 'CSS',],
-        shortDescription: 'Modern Notes App',
-        description: 'A feature-rich task management tool built with React and TypeScript, designed to help users efficiently organize their daily tasks. The app allows you to add, edit, delete, filter, prioritize, and schedule tasks, complete with reminder notifications, drag-and-drop reordering, and Firebase sync for cloud-based persistence. This project demonstrates a strong grasp of state management, custom hooks, component architecture, and real-time data syncing, making it a well-rounded showcase of my frontend development skills.',
-        liveLink: 'https://task-manager-1-five.vercel.app/',
-        repoLink: 'https://github.com/Dannon10/task-manager',
-        demoVideos: [
-            {
-                label: 'Task Manager Demo',
-                url: 'https://youtube.com/embed/IWTBHFBA7xM'
-            }
-        ]
-    },
-    {
-        id: 7,
         title: 'Scissors',
         imageMobile: '/images/scissor-mobile2.jpg',
         imageDesktop: '/images/scissor-desktop.png',
