@@ -25,7 +25,7 @@ export const projects = [
     imageMobile: '/images/fufu-planet-mobile.webp',
     imageDesktop: '/images/fufu-banner.webp',
     tech: ['React', 'Next.js', 'TypeScript', 'AWS', 'Zustand', 'React Query', 'Tailwind CSS', 'REST API'],
-    shortDescription: 'Food Delivery Web-App',
+    shortDescription: 'Restaurant Hub and Food Delivery Platform',
     description: 'Led the frontend integration of the full admin panel for Fufu Planet, an African food delivery platform, connecting the entire dashboard to a live REST API built by the backend team. Implemented a consistent four-layer architecture (types, services, query keys, hooks) across every module, covering authentication and route guarding, vendor management, order tracking, support tickets, and platform settings. Handled image upload and retrieval through AWS S3, including uploading vendor and product images and fetching stored images back into the UI. Used React Query for data fetching, caching, and background sync, and Zustand for global state management, replacing prop-heavy patterns with a cleaner, more maintainable structure. Styled the entire interface with Tailwind CSS and resolved a range of integration issues along the way, including TypeScript type mismatches, broken routing guards, and inconsistent activity feed rendering, working closely with the backend developer to keep the API contract in sync as features evolved.',
     liveLink: 'https://fufuplanet.com',
 },
