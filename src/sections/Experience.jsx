@@ -6,17 +6,17 @@ export default function Experience() {
             <h2 className="section-title">EXPERIENCE</h2>
 
             <div className="experience-list">
-                {/* <div className="experience-item">
+                <div className="experience-item">
                     <div className="experience-header">
                         <div className="experience-info">
-                            <h3 className="experience-title">Frontend Developer</h3>
+                            <h3 className="experience-title">Lead Frontend Developer</h3>
                             <span className="experience-company">
-                                KDN Plus — United States (Remote)
+                                KDN Plus United States (Remote)
                             </span>
                         </div>
                         <p className="experience-duration">Jan 2026 – Present</p>
                     </div>
-                </div> */}
+                </div>
 
                 <div className="experience-item">
                     <div className="experience-header">
@@ -26,7 +26,7 @@ export default function Experience() {
                                 Astra — United Kingdom (Remote)
                             </span>
                         </div>
-                        <p className="experience-duration">June 2025 – June 2026</p>
+                        <p className="experience-duration">June 2025 – Mar 2026</p>
                     </div>
                 </div>
 
