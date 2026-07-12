@@ -11,7 +11,7 @@ export default function Experience() {
                         <div className="experience-info">
                             <h3 className="experience-title">Lead Frontend Developer</h3>
                             <span className="experience-company">
-                                KDN Plus United States (Remote)
+                                KDN Plus — United States (Remote)
                             </span>
                         </div>
                         <p className="experience-duration">Jan 2026 – Present</p>
