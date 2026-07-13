@@ -26,7 +26,7 @@ export default function Experience() {
                                 Astra — United Kingdom (Remote)
                             </span>
                         </div>
-                        <p className="experience-duration">June 2025 – Mar 2026</p>
+                        <p className="experience-duration">June 2025 – June 2026</p>
                     </div>
                 </div>
 
