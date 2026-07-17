@@ -19,38 +19,48 @@ export const projects = [
             }
         ]
     },
-{
-    id: 2,
-    title: "Fufu Planet",
-    imageMobile: '/images/fufu-planet-mobile.webp',
-    imageDesktop: '/images/fufu-banner.webp',
-    tech: ['React', 'Next.js', 'TypeScript', 'AWS', 'Zustand', 'React Query', 'Tailwind CSS', 'REST API'],
-    shortDescription: 'Restaurant Hub and Food Delivery Platform',
-    description: 'Led the frontend integration of the full admin panel for Fufu Planet, an African food delivery platform, connecting the entire dashboard to a live REST API built by the backend team. Implemented a consistent four-layer architecture (types, services, query keys, hooks) across every module, covering authentication and route guarding, vendor management, order tracking, support tickets, and platform settings. Handled image upload and retrieval through AWS S3, including uploading vendor and product images and fetching stored images back into the UI. Used React Query for data fetching, caching, and background sync, and Zustand for global state management, replacing prop-heavy patterns with a cleaner, more maintainable structure. Styled the entire interface with Tailwind CSS and resolved a range of integration issues along the way, including TypeScript type mismatches, broken routing guards, and inconsistent activity feed rendering, working closely with the backend developer to keep the API contract in sync as features evolved.',
-    liveLink: 'https://fufuplanet.com',
-},
-{
-    id: 3,
-    title: 'Stuuudio',
-    imageMobile: '/images/stuuudio-mobile.png',
-    imageDesktop: '/images/stuuudio-desktop.png',
-    tech: [' React', 'Next.js', 'Typescript', 'GSAP', 'Tailwind CSS', 'Cloudinary'],
-    shortDescription: 'Creative Agency Portfolio',
-            description: 'I built Stuuudio as a bespoke portfolio website for a creative agency that wanted a digital presence as distinctive as its work. Using React, Next.js, and TypeScript, I created a fast, modern experience with a strong visual identity, refined interaction design, and smooth motion through GSAP and Tailwind CSS. The site highlights the agency’s projects through immersive case studies and thoughtfully structured content, giving their work the space and presentation it deserves.',
-    liveLink: 'https://stuuudio.org/',
-},
     {
-        id: 4,
+        id: 2,
+        title: 'Stuuudio',
+        imageMobile: '/images/stuuudio-mobile.png',
+        imageDesktop: '/images/stuuudio-desktop.png',
+        tech: [' React', 'Next.js', 'Typescript', 'GSAP', 'Tailwind CSS', 'Cloudinary'],
+        shortDescription: 'Creative Agency Portfolio',
+        description: 'I built Stuuudio as a bespoke portfolio website for a creative agency that wanted a digital presence as distinctive as its work. Using React, Next.js, and TypeScript, I created a fast, modern experience with a strong visual identity, refined interaction design, and smooth motion through GSAP and Tailwind CSS. The site highlights the agency’s projects through immersive case studies and thoughtfully structured content, giving their work the space and presentation it deserves.',
+        liveLink: 'https://stuuudio.org/',
+    },
+    {
+        id: 3,
+        title: "Fufu Planet",
+        imageMobile: '/images/fufu-planet-mobile.webp',
+        imageDesktop: '/images/fufu-banner.webp',
+        tech: ['React', 'Next.js', 'TypeScript', 'AWS', 'Zustand', 'React Query', 'Tailwind CSS', 'REST API'],
+        shortDescription: 'Restaurant Hub and Food Delivery Platform',
+        description: 'Led the frontend integration of the full admin panel for Fufu Planet, an African food delivery platform, connecting the entire dashboard to a live REST API built by the backend team. Implemented a consistent four-layer architecture (types, services, query keys, hooks) across every module, covering authentication and route guarding, vendor management, order tracking, support tickets, and platform settings. Handled image upload and retrieval through AWS S3, including uploading vendor and product images and fetching stored images back into the UI. Used React Query for data fetching, caching, and background sync, and Zustand for global state management, replacing prop-heavy patterns with a cleaner, more maintainable structure. Styled the entire interface with Tailwind CSS and resolved a range of integration issues along the way, including TypeScript type mismatches, broken routing guards, and inconsistent activity feed rendering, working closely with the backend developer to keep the API contract in sync as features evolved.',
+        liveLink: 'https://fufuplanet.com',
+    },
+    // {
+    //     id: 4,
+    //     title: 'KDN Ads',
+    //     imageMobile: '/images/kdnads-mobile.png',
+    //     imageDesktop: '/images/kdnads-desktop.png',
+    //     tech: ['Next.js', 'TypeScript', 'Zustand', 'Axios', 'TanStack Query', 'Stripe', 'Paystack', 'REST API'],
+    //     shortDescription: 'Advertiser Platform for the KDN Ecosystem',
+    //     description: 'KDN Ads is the advertiser-facing platform for the KDN ecosystem, letting businesses create accounts, manage campaigns, and run ads across KDN placements. I led the frontend integration across the full advertiser flow, connecting a Next.js App Router application to a live REST API through a consistent four-layer architecture (types, services, query keys, hooks) across every domain. I built the authentication system end-to-end, including a JWT access token plus httpOnly refresh cookie flow with an axios interceptor handling silent token refresh and request queuing on 401s. I implemented the subscription and billing domains in full, integrating hosted Stripe and Paystack checkout and portal sessions for plan selection, upgrades, and payment method setup, deliberately keeping raw card data off the frontend entirely and routing all payment collection through provider-hosted flows. I built the billing address, invoice history, and unified billing-history views, handling cases like an advertiser having no billing address yet as a distinct empty state rather than an error, after tracing a bug back to a mismatched response shape against the live API. I wired the dashboard, reports, and campaign reporting views to real endpoints for campaigns, creatives, placements, and timeseries data, building reusable stat cards, charts, and filter dropdowns backed by live data instead of design-time mocks. Throughout the integration I worked closely with the backend developer to verify response shapes directly against Postman and the API documentation, catching and fixing several silent type mismatches before they shipped, including cases where guessed field names would have caused UI panels to render blank without ever throwing a visible error.',
+    //     liveLink: 'https://kdnads.com',
+    // },
+    {
+        id: 5,
         title: 'KDN News Network',
         imageMobile: '/images/kdn-tall.webp',
         imageDesktop: '/images/kdn.png',
         tech: [' React', 'Next.js', 'Typescript', 'AWS', 'Tanstack', 'Zustand', 'FAST API', 'Jest', 'Unit Testing'],
         shortDescription: 'Full-Featured News Platform',
         description: 'KDN News Network is a full-featured news platform with distinct reader and admin experiences. Readers can browse and read published articles, bookmark favorites, and manage their accounts with full login and logout support. Admins can create, publish, and manage articles with cover image uploads via AWS S3 presigned URLs. The platform includes Google OAuth and OTP-based authentication, protected routes, and a custom axios interceptor handling token refresh and failed-request queuing. Built with Next.js, TypeScript, Redux Toolkit, Tailwind CSS, and AWS S3.',
-        liveLink: 'http://kdnnn.com/',
+        liveLink: 'https://kdnnn.com/',
     },
     {
-        id: 5,
+        id: 6,
         title: 'DashDish',
         imageMobile: '/images/dashdish-mobile1.jpg',
         imageDesktop: '/images/Dashdish-desktop.jpeg',
@@ -71,7 +81,7 @@ export const projects = [
         ]
     },
     {
-        id: 6,
+        id: 7,
         title: 'Cash Tracker',
         imageMobile: '/images/cash-tracker-mobile1.jpg',
         imageDesktop: '/images/cash-tracker-desktop.jpeg',
@@ -84,40 +94,6 @@ export const projects = [
             {
                 label: 'Cash Tracker Demo',
                 url: 'https://youtube.com/embed/9DgNsWp5JHs'
-            }
-        ]
-    },
-    // {
-    //     id: 6,
-    //     title: 'Task Manager',
-    //     imageMobile: '/images/todo-mobile.jpg',
-    //     imageDesktop: '/images/todo-desktop.png',
-    //     tech: ['React', 'Typescript', 'Firebase', 'CSS',],
-    //     shortDescription: 'Modern Notes App',
-    //     description: 'A feature-rich task management tool built with React and TypeScript, designed to help users efficiently organize their daily tasks. The app allows you to add, edit, delete, filter, prioritize, and schedule tasks, complete with reminder notifications, drag-and-drop reordering, and Firebase sync for cloud-based persistence. This project demonstrates a strong grasp of state management, custom hooks, component architecture, and real-time data syncing, making it a well-rounded showcase of my frontend development skills.',
-    //     liveLink: 'https://task-manager-1-five.vercel.app/',
-    //     repoLink: 'https://github.com/Dannon10/task-manager',
-    //     demoVideos: [
-    //         {
-    //             label: 'Task Manager Demo',
-    //             url: 'https://youtube.com/embed/IWTBHFBA7xM'
-    //         }
-    //     ]
-    // },
-    {
-        id: 7,
-        title: 'Scissors',
-        imageMobile: '/images/scissor-mobile2.jpg',
-        imageDesktop: '/images/scissor-desktop.png',
-        tech: [' React', 'Typescript', 'Firebase', 'CSS',],
-        shortDescription: 'Url Shortener',
-        description: 'Scissors is a full-stack URL shortening platform I built using React 18, TypeScript, and Firebase. The application allows users to shorten long URLs, create custom aliases, generate branded QR codes, and track link performance through a personalized analytics dashboard. I implemented email/password authentication with Firebase Auth and built protected routes to ensure only authenticated users can access their dashboard. Each user’s links are securely stored in Cloud Firestore and scoped to their account. To handle Firebase’s asynchronous session restoration properly, I created a global AuthContext using `onAuthStateChanged`, ensuring reliable user state management across the app. The project follows a clean, scalable architecture with business logic separated into service layers for authentication and URL management. I created a custom hook to encapsulate the shortening logic and history state, and designed a tab-based dashboard that avoids unnecessary refetching of data. The analytics section displays total clicks per link with a 7-day performance chart, while the QR generator allows users to customize colors and download PNG codes. From a frontend perspective, I built a reusable component structure, implemented responsive layouts with CSS Modules, and structured the application using React Router v6 for clear navigation flows. The project demonstrates my ability to design and build a production-style web application that integrates third-party APIs, manages authentication securely, structures scalable React architecture, and delivers a polished user experience.',
-        liveLink: 'https://scissor-url-app.netlify.app/',
-        repoLink: 'https://github.com/Dannon10/Scissorapp',
-        demoVideos: [
-            {
-                label: 'Scissors Demo',
-                url: 'https://youtube.com/embed/VDjq-MyY8Rc'
             }
         ]
     },

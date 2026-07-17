@@ -35,7 +35,7 @@ export default function Skills() {
                             <ul className='stack-lists'>
                                 {[
                                     'HTML', 'CSS', 'JavaScript', 'TypeScript',
-                                    'React.js', 'Next.js', 'React Native', 'Expo', 'Vue.js',
+                                    'React.js', 'Next.js', 'React Native', 'Expo',
                                     'Tailwind CSS', 'SASS / SCSS',
                                     'Redux', 'Zustand',
                                     'React Query / TanStack Query',
