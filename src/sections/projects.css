@@ -85,3 +85,14 @@
         font-size: 5rem;
     }
 }
+
+@media (max-width: 350px) {
+    .toggle-actions {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .view-toggle h2 {
+    font-size: 3.5rem;
+}
+}

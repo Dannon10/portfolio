@@ -10,7 +10,7 @@ export default function Projects({
   setTransitionTitle, 
   overlayRef 
 }) {
-  const [viewMode, setViewMode] = useState('grid');
+  const [viewMode, setViewMode] = useState('list');
   const [hoveredId, setHoveredId] = useState(null);
 
   useEffect(() => {

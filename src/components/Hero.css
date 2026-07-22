@@ -153,3 +153,21 @@
         padding-left: 4.5rem;
     }
 }
+
+@media (max-width: 350px) {
+    .hero-container {
+        padding: 0 1rem;
+        gap: 1rem;
+    }
+
+    .hero-text {
+        font-size: clamp(3.2rem, 16vw, 7.8rem);
+    }
+
+    .hero-circle {
+        width: 18rem;
+        height: 18rem;
+        bottom: -8rem;
+        right: -8rem;
+    }
+}
