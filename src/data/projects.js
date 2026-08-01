@@ -40,6 +40,16 @@ export const projects = [
         liveLink: 'https://fufuplanet.com',
     },
     {
+        id: 4,
+        title: 'KDN Ads',
+        imageMobile: '/images/kdnads-mobile.png',
+        imageDesktop: '/images/kdnads-desktop.png',
+        tech: ['Next.js', 'TypeScript', 'Zustand', 'Axios', 'TanStack Query', 'Stripe', 'Paystack', 'REST API'],
+        shortDescription: 'Advertiser Platform for the KDN Ecosystem',
+        description: 'KDN Ads is the advertiser-facing platform for the KDN ecosystem, letting businesses create accounts, manage campaigns, and run ads across KDN placements. I led the frontend integration across the full advertiser flow, connecting a Next.js App Router application to a live REST API through a consistent four-layer architecture (types, services, query keys, hooks) across every domain. I built the authentication system end-to-end, including a JWT access token plus httpOnly refresh cookie flow with an axios interceptor handling silent token refresh and request queuing on 401s. I implemented the subscription and billing domains in full, integrating hosted Stripe and Paystack checkout and portal sessions for plan selection, upgrades, and payment method setup, deliberately keeping raw card data off the frontend entirely and routing all payment collection through provider-hosted flows. I built the billing address, invoice history, and unified billing-history views, handling cases like an advertiser having no billing address yet as a distinct empty state rather than an error, after tracing a bug back to a mismatched response shape against the live API. I wired the dashboard, reports, and campaign reporting views to real endpoints for campaigns, creatives, placements, and timeseries data, building reusable stat cards, charts, and filter dropdowns backed by live data instead of design-time mocks. Throughout the integration I worked closely with the backend developer to verify response shapes directly against Postman and the API documentation, catching and fixing several silent type mismatches before they shipped, including cases where guessed field names would have caused UI panels to render blank without ever throwing a visible error.',
+        liveLink: 'https://kdnads.com',
+    },
+    {
         id: 5,
         title: 'KDN News Network',
         imageMobile: '/images/kdn-tall.webp',
