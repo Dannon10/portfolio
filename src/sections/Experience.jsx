@@ -38,7 +38,7 @@ export default function Experience() {
                                 Prep Beta Solutions — Lagos, Nigeria (Remote)
                             </span>
                         </div>
-                        <p className="experience-duration">January 2024 – May 2025</p>
+                        <p className="experience-duration">Ja 2024 – May 2025</p>
                     </div>
                 </div>
 
@@ -50,7 +50,7 @@ export default function Experience() {
                                 Tiffany Berth School — Lagos, Nigeria (Remote)
                             </span>
                         </div>
-                        <p className="experience-duration">February 2023 – December 2023</p>
+                        <p className="experience-duration">September 2022 – December 2023</p>
                     </div>
                 </div>
             </div>
