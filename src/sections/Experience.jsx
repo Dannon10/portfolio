@@ -14,7 +14,7 @@ export default function Experience() {
                                 KDN Plus — United States (Remote)
                             </span>
                         </div>
-                        <p className="experience-duration">Jan 2026 – Present</p>
+                        <p className="experience-duration">Jan 2026 – August 2026</p>
                     </div>
                 </div>
 
@@ -38,7 +38,7 @@ export default function Experience() {
                                 Prep Beta Solutions — Lagos, Nigeria (Remote)
                             </span>
                         </div>
-                        <p className="experience-duration">Ja 2024 – May 2025</p>
+                        <p className="experience-duration">August 2023 – May 2025</p>
                     </div>
                 </div>
 
@@ -50,7 +50,7 @@ export default function Experience() {
                                 Tiffany Berth School — Lagos, Nigeria (Remote)
                             </span>
                         </div>
-                        <p className="experience-duration">September 2022 – December 2023</p>
+                        <p className="experience-duration">September 2022 – July 2023</p>
                     </div>
                 </div>
             </div>
