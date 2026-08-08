@@ -69,9 +69,10 @@
         max-width: 46ch;
     }
 
-        .pitch-scroll {
+    .pitch-scroll {
         font-size: 1.2rem;
     }
+
     .stat-number {
         font-size: 4rem;
     }
@@ -83,9 +84,9 @@
 
 @media(min-width: 1024px) {
     .pitch-container {
-        flex-direction: row;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         align-items: center;
-        justify-content: space-between;
         gap: 3rem;
     }
 
@@ -93,22 +94,17 @@
         font-size: 6.5rem;
     }
 
-    .pitch-text {
-        flex: 1.3;
-    }
-
-     .pitch-sub {
+    .pitch-sub {
         font-size: 1.5rem;
     }
 
-     .pitch-scroll {
+    .pitch-scroll {
         font-size: 1.25rem;
     }
 
     .pitch-stats {
         flex-direction: column;
         gap: 2.5rem;
-        flex: 1;
         border-left: 1px solid rgba(255, 255, 255, 0.15);
         padding-left: 3rem;
     }

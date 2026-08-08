@@ -37,7 +37,7 @@ export default function Contact() {
   return (
     <div className="contact-container" id="contact">
       <div className="contact-heading-text">
-        <h1>GET IN TOUCH</h1>
+        <h1>Let's build your product</h1>
       </div>
 
       <form ref={formRef} className="contact-form" onSubmit={handleSubmit}>
