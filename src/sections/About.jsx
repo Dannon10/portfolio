@@ -97,15 +97,14 @@ export default function About() {
             <div className="about-description">
                 <div className="about-text-span">
                     <p ref={aboutRef} className='about-text'>
-                        I’m Dannon a front-end developer who turns pixels into
-                        responsive, interactive web experiences that (hopefully)
-                        don't break. I love building clean, user-friendly interfaces
-                        that work beautifully across devices.
-                        Outside the screen, you'll find me listening to good music,
-                        getting heartbroken by Man United, or binge-watching movies
-                        like it's a full-time job.
-                        I'm currently open to front-end developer roles and
-                        always happy to collaborate on exciting web projects let's build something awesome together!
+                        I'm Dannon, a front-end developer who's spent the last 4+ years turning client ideas into
+                        shipped products from portfolio sites for creatives, to dashboards for advertisers,
+                        to full-stack apps for food delivery and fintech. Over 20 products shipped across 5+ industries,
+                        each one built to be fast, clean, and actually usable, not just good-looking.
+                        Outside the screen, you'll find me listening to good music, getting heartbroken by Man United,
+                        or binge-watching movies like it's a full-time job.
+                        I help founders and agencies turn ideas into fast, polished websites if you've got a
+                        project in mind, let's build something awesome together!
                     </p>
                 </div>
                 <div className="award-section" ref={awardRef}>

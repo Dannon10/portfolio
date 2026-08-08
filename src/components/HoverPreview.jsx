@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import gsap from 'gsap';
 import './hoverPreview.css';
 
-const HoverPreview = ({ hoveredProject, viewMode, mousePos }) => {
+const HoverPreview = ({ hoveredProject, viewMode, mousePos, suppressed }) => {
     const [currentImage, setCurrentImage] = useState(null);
     const [prevImage, setPrevImage] = useState(null);
     const currentRef = useRef(null);
@@ -30,7 +30,7 @@ const HoverPreview = ({ hoveredProject, viewMode, mousePos }) => {
         );
     }, [currentImage, viewMode]);
 
-    if (!currentImage || viewMode !== 'list') return null;
+    if (!currentImage || viewMode !== 'list' || suppressed) return null;
 
     return (
         <div
@@ -38,6 +38,7 @@ const HoverPreview = ({ hoveredProject, viewMode, mousePos }) => {
             style={{
                 top: mousePos.y + 20,
                 left: mousePos.x + 20,
+                opacity: mousePos.opacity ?? 1,
             }}
         >
             {prevImage && (

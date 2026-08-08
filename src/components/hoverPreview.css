@@ -3,7 +3,7 @@
 }
 
 @media(min-width: 1024px) {
-        .hover-preview {
+    .hover-preview {
         display: block;
         position: fixed;
         top: 0;
@@ -13,8 +13,8 @@
         width: 30rem;
         height: 30rem;
         max-width: 30vw;
-        opacity: 1;
         transform: translateY(-20rem);
+        transition: opacity 0.15s ease-out;
     }
 
     .hover-preview-img {

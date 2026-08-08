@@ -2,6 +2,7 @@ import { useState, useRef, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
+import Pitch from '../sections/Pitch';
 import TransitionOverlay from '../components/TransitionOverlay';
 import Projects from '../sections/Projects';
 import About from '../sections/About';
@@ -43,6 +44,7 @@ export default function Home() {
       )}
       <Navbar />
       <Hero />
+      <Pitch />
       <div ref={projectsRef}>
         <Projects
           setTransitioning={setTransitioning}

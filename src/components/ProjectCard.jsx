@@ -9,12 +9,14 @@ const ProjectCard = forwardRef(({
   shortDescription,
   imageMobile,
   imageDesktop,
+  liveLink,
   viewMode,
   setTransitioning,
   setTransitionTitle,
   overlayRef,
   hoveredId,
-  setHoveredId
+  setHoveredId,
+  setPreviewSuppressed
 }, ref) => {
   const cardClass = viewMode === 'list' ? 'project-card-list' : 'project-card-grid';
   const navigate = useNavigate();
@@ -123,6 +125,22 @@ const ProjectCard = forwardRef(({
     navigate(`/projects/${id}`);
   };
 
+  const handleLiveLinkClick = (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    window.open(liveLink, '_blank', 'noopener,noreferrer');
+  };
+
+  const handleLiveLinkMouseEnter = (e) => {
+    e.stopPropagation();
+    setPreviewSuppressed?.(true);
+  };
+
+  const handleLiveLinkMouseLeave = (e) => {
+    e.stopPropagation();
+    setPreviewSuppressed?.(false);
+  };
+
   const handleMouseEnter = () => {
     setHoveredId(id);
 
@@ -203,8 +221,25 @@ const ProjectCard = forwardRef(({
           </h4>
         </div>
 
-        <div>
+        <div className="card-meta">
           <span ref={shortDescriptionRef} className="short-description">{shortDescription}</span>
+
+          {liveLink && (
+            <a
+              href={liveLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={handleLiveLinkClick}
+              onMouseEnter={handleLiveLinkMouseEnter}
+              onMouseLeave={handleLiveLinkMouseLeave}
+              className={viewMode === 'list' ? 'live-link-list' : 'live-link-grid'}
+            >
+              <span className="live-link-content">
+                <span className="live-link-label">Visit site</span>
+                <span className="live-link-icon">↗</span>
+              </span>
+            </a>
+          )}
         </div>
       </div>
     </a>
