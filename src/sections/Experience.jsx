@@ -34,7 +34,7 @@ export default function Experience() {
                     </p>
                     <div className="experience-meta">
                         <span className="experience-duration">JUN 2025 TO JUN 2026</span>
-                        <span className="experience-type">CONTRACT</span>
+                        <span className="experience-type">FULL TIME</span>
                     </div>
                 </div>
 
