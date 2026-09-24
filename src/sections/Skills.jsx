@@ -38,14 +38,14 @@ export default function Skills() {
                                     'React.js', 'Next.js', 'React Native', 'Expo',
                                     'Tailwind CSS', 'SASS / SCSS',
                                     'Redux', 'Zustand',
-                                    'React Query / TanStack Query',
+                                    'React Query / TanStack Query', 'Node.js', 'Express', 'MongoDB',
+                                    'Supabase', 'PostgreSQL',
                                     'Jest', 'Unit Testing',
                                     'GSAP', 'Framer Motion',
                                     'REST APIs', 'WebSockets', 'Geolocation APIs',
                                     'Mapbox', 'AWS S3', 'Paystack', 'Stripe',
                                     'Web3 Integration', 'Smart Contract Interaction',
-                                    'Node.js', 'Express', 'MongoDB',
-                                    'Supabase', 'PostgreSQL', 'Firebase',
+                                    'Firebase',
                                     'Git/GitHub', 'Agile/Scrum'
                                 ].map((item, index) => (
                                     <li
