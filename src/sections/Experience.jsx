@@ -11,6 +11,7 @@ export default function Experience() {
                     <div className="experience-info">
                         <h3 className="experience-title">Lead Frontend Developer</h3>
                         <span className="experience-company">KDN Plus</span>
+                        <span className="experience-location">New York, United States · Remote</span>
                     </div>
                     <p className="experience-problem">
                         Built 3 products for KDN Plus's ecosystem, now serving around
@@ -27,6 +28,7 @@ export default function Experience() {
                     <div className="experience-info">
                         <h3 className="experience-title">Frontend & Web3 Developer</h3>
                         <span className="experience-company">Astra</span>
+                        <span className="experience-location">United Kingdom · Remote</span>
                     </div>
                     <p className="experience-problem">
                         Built the fashion designer's interface at Astra, including a
@@ -43,6 +45,7 @@ export default function Experience() {
                     <div className="experience-info">
                         <h3 className="experience-title">Frontend Developer</h3>
                         <span className="experience-company">Prep Beta Solutions</span>
+                        <span className="experience-location">Lagos, Nigeria · Remote</span>
                     </div>
                     <p className="experience-problem">
                         Built a study app to help A-Level students prep more effectively.
@@ -58,6 +61,7 @@ export default function Experience() {
                     <div className="experience-info">
                         <h3 className="experience-title">Frontend Developer</h3>
                         <span className="experience-company">Tiffany Berth School</span>
+                        <span className="experience-location">Lagos, Nigeria · Remote</span>
                     </div>
                     <p className="experience-problem">
                         Built an administrative dashboard to help the school manage
