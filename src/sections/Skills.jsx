@@ -44,6 +44,7 @@ export default function Skills() {
                                     'REST APIs', 'WebSockets', 'Geolocation APIs',
                                     'Mapbox', 'AWS S3', 'Paystack', 'Stripe',
                                     'Web3 Integration', 'Smart Contract Interaction',
+                                    'Node.js', 'Express', 'MongoDB',
                                     'Supabase', 'PostgreSQL', 'Firebase',
                                     'Git/GitHub', 'Agile/Scrum'
                                 ].map((item, index) => (
