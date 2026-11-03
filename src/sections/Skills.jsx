@@ -34,20 +34,27 @@ export default function Skills() {
                         <div className="list-container">
                             <ul className='stack-lists'>
                                 {[
-                                    'HTML', 'CSS', 'JavaScript', 'TypeScript',
-                                    'React.js', 'Next.js', 'React Native', 'Expo',
-                                    'Tailwind CSS', 'SASS / SCSS',
-                                    'Redux', 'Zustand',
-                                    'React Query / TanStack Query', 'Node.js', 'Express', 'MongoDB',
-                                    'Supabase', 'PostgreSQL',
-                                    'Jest', 'Unit Testing',
-                                    'GSAP', 'Framer Motion',
-                                    'REST APIs', 'WebSockets', 'Geolocation APIs',
-                                    'Mapbox', 'AWS S3', 'Paystack', 'Stripe',
-                                    'Web3 Integration', 'Smart Contract Interaction',
-                                    'Firebase',
-                                    'Git/GitHub', 'Agile/Scrum'
-                                ].map((item, index) => (
+    'HTML', 'CSS', 'JavaScript', 'TypeScript',
+    'React.js', 'Next.js', 'React Native', 'Expo',
+    'Tailwind CSS', 'SASS / SCSS', 'Responsive Design',
+    'Redux', 'Zustand',
+    'React Query / TanStack Query', 'Node.js', 'Express', 'MongoDB',
+    'Supabase', 'PostgreSQL', 'MySQL', 
+    'Authentication (JWT, OAuth, Sessions)',
+    'Jest', 'Unit Testing', 'Cypress',
+    'GSAP', 'Framer Motion',
+    'REST APIs', 'GraphQL', 'WebSockets', 'Geolocation APIs',
+    'Mapbox', 'AWS S3', 'Paystack', 'Flutterwave', 'Stripe', 
+    'OpenAI API Integration',
+    'Web3 Integration', 'Smart Contract Interaction',
+    'Thirdweb SDK', 'Ethers.js', 'Wagmi',
+    'Firebase',
+    'Docker',
+    'Git/GitHub', 'CI/CD (GitHub Actions)',
+    'Postman', 'Figma',
+    'SEO Optimization', 'Cross-Browser Compatibility',
+    'Agile/Scrum'
+].map((item, index) => (
                                     <li
                                         key={item}
                                         className="stack-item"
